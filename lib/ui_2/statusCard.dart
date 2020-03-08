@@ -23,41 +23,47 @@ class _TestCardState extends State<TestCard> {
               margin: EdgeInsets.only(right: 10,left: 10,top: 10),
               child: Container(
                 decoration: BoxDecoration(color: card),
-                child: ListTile(
-                  onTap: (){
-                    setState(() {
-                      _expanded?_expanded=false:_expanded=true;
-                    });
-                  },
-                    contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
-                    leading: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Container(
-                          padding: EdgeInsets.only(right: 12.0),
-                          decoration: BoxDecoration(
-                              border: Border(
-                                  right: BorderSide(width: 1.0, color: Colors.white24))),
-                          child: Icon(LineAwesomeIcons.exclamation_circle, color: Colors.white),
+                child: Material(
+                  color: Colors.transparent,
+                  child: InkWell(
+                    hoverColor: Colors.yellowAccent,
+                    child: ListTile(
+                      onTap: (){
+                        setState(() {
+                          _expanded?_expanded=false:_expanded=true;
+                        });
+                      },
+                        contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+                        leading: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            Container(
+                              padding: EdgeInsets.only(right: 12.0),
+                              decoration: BoxDecoration(
+                                  border: Border(
+                                      right: BorderSide(width: 1.0, color: Colors.white24))),
+                              child: Icon(LineAwesomeIcons.exclamation_circle, color: Colors.white),
+                            ),
+                          ],
                         ),
-                      ],
+                      dense: true,
+                      isThreeLine: false,
+                        title: Text(
+                          "Placeholder Text",
+                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                        ),
+                        subtitle: Row(
+                          children: <Widget>[
+                            Icon(Icons.linear_scale, color: Colors.yellowAccent),
+                            Text("Pending", style: TextStyle(color: Colors.white))
+                          ],
+                        ),
+                        trailing:
+                        _expanded
+                          ?Icon(Icons.keyboard_arrow_up, color: Colors.white, size: 30.0)
+                          :Icon(Icons.keyboard_arrow_down, color: Colors.white, size: 30.0),
                     ),
-                  dense: true,
-                  isThreeLine: false,
-                    title: Text(
-                      "Placeholder Text",
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-                    ),
-                    subtitle: Row(
-                      children: <Widget>[
-                        Icon(Icons.linear_scale, color: Colors.yellowAccent),
-                        Text("Pending", style: TextStyle(color: Colors.white))
-                      ],
-                    ),
-                    trailing:
-                    _expanded
-                      ?Icon(Icons.keyboard_arrow_up, color: Colors.white, size: 30.0)
-                      :Icon(Icons.keyboard_arrow_down, color: Colors.white, size: 30.0),
+                  ),
                 ),
               ),
             ),
@@ -67,12 +73,10 @@ class _TestCardState extends State<TestCard> {
             decoration: BoxDecoration(
               color: Colors.grey.shade50,
               border: Border(
-                left: BorderSide(width: 1, color: Colors.white),
-                right: BorderSide(width: 1, color: Colors.white),
               ),
               borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5),bottomRight: Radius.circular(5)),
             ),
-            duration: Duration(milliseconds: 200),
+            duration: Duration(milliseconds: 170),
             height: _expanded?150:0,
             child: StatusInfo(),
           ),
@@ -91,11 +95,13 @@ class _StatusInfoState extends State<StatusInfo> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: wWidth(800),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
-
+          Placeholder(
+            fallbackHeight: 100,
+            fallbackWidth: 700,
+          ),
         ],
       ),
     );

@@ -1,0 +1,1 @@
+{"isEntrypoint":false,"deps":["test_api|lib/src/frontend/async_matcher.dart","test_api|lib/test_api.dart","flutter_test|lib/src/goldens.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["async","typed_data"],"hasMain":false}

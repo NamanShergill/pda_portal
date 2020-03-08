@@ -42,11 +42,6 @@ class _Dash2State extends State<Dash2> {
     return SafeArea(
       top: true,
       child: Scaffold(
-        appBar: AppBar(
-          elevation: 0,
-          backgroundColor: background,
-          leading: Icon(Icons.menu),
-        ),
         body: _children[currentIndex],
         bottomNavigationBar: BubbleBottomBar(
           backgroundColor: background,
