@@ -98,10 +98,6 @@ class _StatusInfoState extends State<StatusInfo> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
-          Placeholder(
-            fallbackHeight: 100,
-            fallbackWidth: 700,
-          ),
         ],
       ),
     );

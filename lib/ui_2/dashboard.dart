@@ -3,6 +3,8 @@ import 'package:pda_portal/theme.dart';
 import 'statusCard.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:line_awesome_icons/line_awesome_icons.dart';
+import 'package:draggable_scrollbar/draggable_scrollbar.dart';
+import 'package:flare_flutter/flare_actor.dart';
 
 class Dashboard extends StatefulWidget {
   @override
@@ -57,9 +59,9 @@ class _DashboardState extends State<Dashboard> {
                 children: <Widget>[
                   Center(
                     child: ListView.builder(
-                        physics: BouncingScrollPhysics(),
+                        physics: NeverScrollableScrollPhysics(),
                         shrinkWrap: true,
-                        itemCount: 4,
+                        itemCount: 5,
                         itemBuilder: (context, index) {
                           return TestCard();
                         }),
@@ -68,43 +70,22 @@ class _DashboardState extends State<Dashboard> {
                     height: 20,
                   ),
                   Center(
-                    child: Container(
-                      decoration: BoxDecoration(
-                          border: Border.all(color: Colors.white),
-                          color: Colors.white,
-                          borderRadius: BorderRadius.all(Radius.circular(10))),
-                      child: Material(
-                        color: Colors.transparent,
-                        child: InkWell(
-                          borderRadius: BorderRadius.all(Radius.circular(10)),
-                          onTap: () {},
-                          child: Container(
-                            width: ScreenUtil().setWidth(200),
-                            constraints: BoxConstraints(maxWidth: 200),
-                            child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: <Widget>[
-                                  Text(
-                                    'ADD',
-                                    style: textWhite.copyWith(
-                                        fontSize: wSize(25, 15),
-                                        fontWeight: FontWeight.bold,
-                                        color: background),
-                                  ),
-                                  Icon(
-                                    Icons.add,
-                                    size: wSize(30, 20),
-                                    color: background,
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
+                    child: Column(
+                      children: <Widget>[
+                        Container(
+                            height: 150,
+                            width: 150,
+                            child: FlareActor("assets/flare/empty.flr",
+                              alignment: Alignment.center,
+                              fit: BoxFit.contain,
+                              animation: "idle",)
                         ),
-                      ),
+                        Text("Nothing more to see here!", style: textWhite,)
+                      ],
                     ),
+                  ),
+                  SizedBox(
+                    height: 20,
                   ),
                 ],
               ),

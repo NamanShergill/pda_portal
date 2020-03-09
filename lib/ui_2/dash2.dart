@@ -43,6 +43,18 @@ class _Dash2State extends State<Dash2> {
       top: true,
       child: Scaffold(
         body: _children[currentIndex],
+        floatingActionButton: FloatingActionButton.extended(
+            onPressed: (){},
+            backgroundColor: Colors.white,
+            label: Align(
+                alignment: Alignment.center,
+                child: Row(
+                  children: <Widget>[
+                    Icon(Icons.add, color: Colors.black, size: 17,),
+                    Text('ADD', style: TextStyle(color: Colors.black, fontSize: 15, fontWeight: FontWeight.w500),),
+                  ],
+                ))
+        ),
         bottomNavigationBar: BubbleBottomBar(
           backgroundColor: background,
           opacity: 0.1,
