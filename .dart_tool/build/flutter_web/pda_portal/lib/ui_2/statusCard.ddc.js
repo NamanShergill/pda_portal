@@ -1,11 +1,12 @@
-define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/src/painting/_network_image_web', 'packages/pda_portal/theme', 'packages/flutter/material', 'packages/flutter/src/rendering/animated_size', 'packages/line_awesome_icons/line_awesome_icons'], function(dart_sdk, packages__flutter__src__widgets__actions, packages__flutter__src__painting___network_image_web, packages__pda_portal__theme, packages__flutter__material, packages__flutter__src__rendering__animated_size, packages__line_awesome_icons__line_awesome_icons) {
+define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/src/painting/_network_image_web', 'packages/flutter/material', 'packages/pda_portal/theme', 'packages/flutter/src/rendering/animated_size', 'packages/line_awesome_icons/line_awesome_icons'], function(dart_sdk, packages__flutter__src__widgets__actions, packages__flutter__src__painting___network_image_web, packages__flutter__material, packages__pda_portal__theme, packages__flutter__src__rendering__animated_size, packages__line_awesome_icons__line_awesome_icons) {
   'use strict';
   const core = dart_sdk.core;
-  const _interceptors = dart_sdk._interceptors;
   const ui = dart_sdk.ui;
+  const _interceptors = dart_sdk._interceptors;
   const dart = dart_sdk.dart;
   const dartx = dart_sdk.dartx;
   const framework = packages__flutter__src__widgets__actions.src__widgets__framework;
+  const media_query = packages__flutter__src__widgets__actions.src__widgets__media_query;
   const basic = packages__flutter__src__widgets__actions.src__widgets__basic;
   const container = packages__flutter__src__widgets__actions.src__widgets__container;
   const icon = packages__flutter__src__widgets__actions.src__widgets__icon;
@@ -14,24 +15,22 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
   const implicit_animations = packages__flutter__src__widgets__actions.src__widgets__implicit_animations;
   const edge_insets = packages__flutter__src__painting___network_image_web.src__painting__edge_insets;
   const box_decoration = packages__flutter__src__painting___network_image_web.src__painting__box_decoration;
+  const border_radius = packages__flutter__src__painting___network_image_web.src__painting__border_radius;
   const box_border = packages__flutter__src__painting___network_image_web.src__painting__box_border;
   const borders = packages__flutter__src__painting___network_image_web.src__painting__borders;
   const text_style = packages__flutter__src__painting___network_image_web.src__painting__text_style;
-  const border_radius = packages__flutter__src__painting___network_image_web.src__painting__border_radius;
-  const box_shadow = packages__flutter__src__painting___network_image_web.src__painting__box_shadow;
-  const theme = packages__pda_portal__theme.theme;
   const card = packages__flutter__material.src__material__card;
   const colors = packages__flutter__material.src__material__colors;
   const material = packages__flutter__material.src__material__material;
   const ink_well = packages__flutter__material.src__material__ink_well;
   const list_tile = packages__flutter__material.src__material__list_tile;
   const icons = packages__flutter__material.src__material__icons;
+  const theme = packages__pda_portal__theme.theme;
   const flex = packages__flutter__src__rendering__animated_size.src__rendering__flex;
   const line_awesome_icons = packages__line_awesome_icons__line_awesome_icons.line_awesome_icons;
   var statusCard = Object.create(dart.library);
   var VoidToNull = () => (VoidToNull = dart.constFn(dart.fnType(core.Null, [])))();
   var JSArrayOfWidget = () => (JSArrayOfWidget = dart.constFn(_interceptors.JSArray$(framework.Widget)))();
-  var JSArrayOfBoxShadow = () => (JSArrayOfBoxShadow = dart.constFn(_interceptors.JSArray$(box_shadow.BoxShadow)))();
   const CT = Object.create(null);
   dart.defineLazy(CT, {
     get C0() {
@@ -49,7 +48,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "icon",
         [_Location_column]: 60,
-        [_Location_line]: 45,
+        [_Location_line]: 50,
         [_Location_file]: null
       });
     },
@@ -59,7 +58,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "color",
         [_Location_column]: 80,
-        [_Location_line]: 45,
+        [_Location_line]: 50,
         [_Location_file]: null
       });
     },
@@ -72,7 +71,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C2 || CT.C2,
         [_Location_name]: null,
         [_Location_column]: 38,
-        [_Location_line]: 45,
+        [_Location_line]: 50,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     },
@@ -82,7 +81,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "padding",
         [_Location_column]: 31,
-        [_Location_line]: 41,
+        [_Location_line]: 46,
         [_Location_file]: null
       });
     },
@@ -92,7 +91,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "decoration",
         [_Location_column]: 31,
-        [_Location_line]: 42,
+        [_Location_line]: 47,
         [_Location_file]: null
       });
     },
@@ -102,7 +101,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 31,
-        [_Location_line]: 45,
+        [_Location_line]: 50,
         [_Location_file]: null
       });
     },
@@ -115,7 +114,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C6 || CT.C6,
         [_Location_name]: null,
         [_Location_column]: 29,
-        [_Location_line]: 40,
+        [_Location_line]: 45,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     },
@@ -125,7 +124,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "mainAxisAlignment",
         [_Location_column]: 27,
-        [_Location_line]: 38,
+        [_Location_line]: 43,
         [_Location_file]: null
       });
     },
@@ -135,7 +134,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 27,
-        [_Location_line]: 39,
+        [_Location_line]: 44,
         [_Location_file]: null
       });
     },
@@ -148,7 +147,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C11 || CT.C11,
         [_Location_name]: null,
         [_Location_column]: 34,
-        [_Location_line]: 37,
+        [_Location_line]: 42,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     },
@@ -158,7 +157,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "data",
         [_Location_column]: 27,
-        [_Location_line]: 52,
+        [_Location_line]: 57,
         [_Location_file]: null
       });
     },
@@ -168,7 +167,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "style",
         [_Location_column]: 27,
-        [_Location_line]: 53,
+        [_Location_line]: 58,
         [_Location_file]: null
       });
     },
@@ -181,7 +180,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C15 || CT.C15,
         [_Location_name]: null,
         [_Location_column]: 32,
-        [_Location_line]: 51,
+        [_Location_line]: 56,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     },
@@ -191,7 +190,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "icon",
         [_Location_column]: 40,
-        [_Location_line]: 57,
+        [_Location_line]: 62,
         [_Location_file]: null
       });
     },
@@ -201,7 +200,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "color",
         [_Location_column]: 54,
-        [_Location_line]: 57,
+        [_Location_line]: 62,
         [_Location_file]: null
       });
     },
@@ -214,7 +213,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C19 || CT.C19,
         [_Location_name]: null,
         [_Location_column]: 29,
-        [_Location_line]: 57,
+        [_Location_line]: 62,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     },
@@ -224,7 +223,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "data",
         [_Location_column]: 34,
-        [_Location_line]: 58,
+        [_Location_line]: 63,
         [_Location_file]: null
       });
     },
@@ -234,7 +233,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "style",
         [_Location_column]: 45,
-        [_Location_line]: 58,
+        [_Location_line]: 63,
         [_Location_file]: null
       });
     },
@@ -247,7 +246,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C23 || CT.C23,
         [_Location_name]: null,
         [_Location_column]: 29,
-        [_Location_line]: 58,
+        [_Location_line]: 63,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     },
@@ -257,7 +256,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 27,
-        [_Location_line]: 56,
+        [_Location_line]: 61,
         [_Location_file]: null
       });
     },
@@ -270,7 +269,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C27 || CT.C27,
         [_Location_name]: null,
         [_Location_column]: 35,
-        [_Location_line]: 55,
+        [_Location_line]: 60,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     },
@@ -280,7 +279,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "icon",
         [_Location_column]: 39,
-        [_Location_line]: 63,
+        [_Location_line]: 68,
         [_Location_file]: null
       });
     },
@@ -290,7 +289,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "color",
         [_Location_column]: 58,
-        [_Location_line]: 63,
+        [_Location_line]: 68,
         [_Location_file]: null
       });
     },
@@ -300,7 +299,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "size",
         [_Location_column]: 79,
-        [_Location_line]: 63,
+        [_Location_line]: 68,
         [_Location_file]: null
       });
     },
@@ -313,7 +312,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C30 || CT.C30,
         [_Location_name]: null,
         [_Location_column]: 28,
-        [_Location_line]: 63,
+        [_Location_line]: 68,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     },
@@ -323,7 +322,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "icon",
         [_Location_column]: 39,
-        [_Location_line]: 64,
+        [_Location_line]: 69,
         [_Location_file]: null
       });
     },
@@ -333,7 +332,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "color",
         [_Location_column]: 60,
-        [_Location_line]: 64,
+        [_Location_line]: 69,
         [_Location_file]: null
       });
     },
@@ -343,7 +342,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "size",
         [_Location_column]: 81,
-        [_Location_line]: 64,
+        [_Location_line]: 69,
         [_Location_file]: null
       });
     },
@@ -356,7 +355,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C35 || CT.C35,
         [_Location_name]: null,
         [_Location_column]: 28,
-        [_Location_line]: 64,
+        [_Location_line]: 69,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     },
@@ -366,7 +365,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "onTap",
         [_Location_column]: 23,
-        [_Location_line]: 31,
+        [_Location_line]: 36,
         [_Location_file]: null
       });
     },
@@ -376,7 +375,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "contentPadding",
         [_Location_column]: 25,
-        [_Location_line]: 36,
+        [_Location_line]: 41,
         [_Location_file]: null
       });
     },
@@ -386,7 +385,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "leading",
         [_Location_column]: 25,
-        [_Location_line]: 37,
+        [_Location_line]: 42,
         [_Location_file]: null
       });
     },
@@ -396,7 +395,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "dense",
         [_Location_column]: 23,
-        [_Location_line]: 49,
+        [_Location_line]: 54,
         [_Location_file]: null
       });
     },
@@ -406,7 +405,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "isThreeLine",
         [_Location_column]: 23,
-        [_Location_line]: 50,
+        [_Location_line]: 55,
         [_Location_file]: null
       });
     },
@@ -416,7 +415,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "title",
         [_Location_column]: 25,
-        [_Location_line]: 51,
+        [_Location_line]: 56,
         [_Location_file]: null
       });
     },
@@ -426,7 +425,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "subtitle",
         [_Location_column]: 25,
-        [_Location_line]: 55,
+        [_Location_line]: 60,
         [_Location_file]: null
       });
     },
@@ -436,7 +435,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "trailing",
         [_Location_column]: 25,
-        [_Location_line]: 61,
+        [_Location_line]: 66,
         [_Location_file]: null
       });
     },
@@ -449,7 +448,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C40 || CT.C40,
         [_Location_name]: null,
         [_Location_column]: 28,
-        [_Location_line]: 30,
+        [_Location_line]: 35,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     },
@@ -457,9 +456,9 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
       return C51 = dart.const({
         __proto__: widget_inspector._Location.prototype,
         [_Location_parameterLocations]: null,
-        [_Location_name]: "hoverColor",
+        [_Location_name]: "borderRadius",
         [_Location_column]: 21,
-        [_Location_line]: 29,
+        [_Location_line]: 34,
         [_Location_file]: null
       });
     },
@@ -469,7 +468,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 21,
-        [_Location_line]: 30,
+        [_Location_line]: 35,
         [_Location_file]: null
       });
     },
@@ -482,7 +481,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C50 || CT.C50,
         [_Location_name]: null,
         [_Location_column]: 26,
-        [_Location_line]: 28,
+        [_Location_line]: 33,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     },
@@ -492,7 +491,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "color",
         [_Location_column]: 19,
-        [_Location_line]: 27,
+        [_Location_line]: 32,
         [_Location_file]: null
       });
     },
@@ -502,7 +501,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 19,
-        [_Location_line]: 28,
+        [_Location_line]: 33,
         [_Location_file]: null
       });
     },
@@ -515,7 +514,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C54 || CT.C54,
         [_Location_name]: null,
         [_Location_column]: 24,
-        [_Location_line]: 26,
+        [_Location_line]: 31,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     },
@@ -525,7 +524,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "decoration",
         [_Location_column]: 17,
-        [_Location_line]: 25,
+        [_Location_line]: 27,
         [_Location_file]: null
       });
     },
@@ -535,7 +534,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 17,
-        [_Location_line]: 26,
+        [_Location_line]: 31,
         [_Location_file]: null
       });
     },
@@ -548,7 +547,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C58 || CT.C58,
         [_Location_name]: null,
         [_Location_column]: 22,
-        [_Location_line]: 24,
+        [_Location_line]: 26,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     },
@@ -558,7 +557,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "color",
         [_Location_column]: 15,
-        [_Location_line]: 21,
+        [_Location_line]: 23,
         [_Location_file]: null
       });
     },
@@ -568,7 +567,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "elevation",
         [_Location_column]: 15,
-        [_Location_line]: 22,
+        [_Location_line]: 24,
         [_Location_file]: null
       });
     },
@@ -578,7 +577,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "margin",
         [_Location_column]: 15,
-        [_Location_line]: 23,
+        [_Location_line]: 25,
         [_Location_file]: null
       });
     },
@@ -588,7 +587,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 15,
-        [_Location_line]: 24,
+        [_Location_line]: 26,
         [_Location_file]: null
       });
     },
@@ -601,7 +600,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C62 || CT.C62,
         [_Location_name]: null,
         [_Location_column]: 20,
-        [_Location_line]: 20,
+        [_Location_line]: 22,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     },
@@ -611,7 +610,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "width",
         [_Location_column]: 13,
-        [_Location_line]: 19,
+        [_Location_line]: 21,
         [_Location_file]: null
       });
     },
@@ -621,7 +620,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 13,
-        [_Location_line]: 20,
+        [_Location_line]: 22,
         [_Location_file]: null
       });
     },
@@ -634,7 +633,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C68 || CT.C68,
         [_Location_name]: null,
         [_Location_column]: 11,
-        [_Location_line]: 18,
+        [_Location_line]: 20,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     },
@@ -647,7 +646,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C72 || CT.C72,
         [_Location_name]: null,
         [_Location_column]: 20,
-        [_Location_line]: 81,
+        [_Location_line]: 86,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     },
@@ -657,7 +656,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "width",
         [_Location_column]: 13,
-        [_Location_line]: 72,
+        [_Location_line]: 77,
         [_Location_file]: null
       });
     },
@@ -667,7 +666,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "decoration",
         [_Location_column]: 13,
-        [_Location_line]: 73,
+        [_Location_line]: 78,
         [_Location_file]: null
       });
     },
@@ -677,7 +676,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "duration",
         [_Location_column]: 13,
-        [_Location_line]: 79,
+        [_Location_line]: 84,
         [_Location_file]: null
       });
     },
@@ -687,7 +686,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "height",
         [_Location_column]: 13,
-        [_Location_line]: 80,
+        [_Location_line]: 85,
         [_Location_file]: null
       });
     },
@@ -697,7 +696,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 13,
-        [_Location_line]: 81,
+        [_Location_line]: 86,
         [_Location_file]: null
       });
     },
@@ -710,7 +709,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C74 || CT.C74,
         [_Location_name]: null,
         [_Location_column]: 11,
-        [_Location_line]: 71,
+        [_Location_line]: 76,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     },
@@ -720,7 +719,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 9,
-        [_Location_line]: 17,
+        [_Location_line]: 19,
         [_Location_file]: null
       });
     },
@@ -733,7 +732,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C81 || CT.C81,
         [_Location_name]: null,
         [_Location_column]: 14,
-        [_Location_line]: 16,
+        [_Location_line]: 18,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     },
@@ -743,7 +742,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "padding",
         [_Location_column]: 7,
-        [_Location_line]: 15,
+        [_Location_line]: 17,
         [_Location_file]: null
       });
     },
@@ -753,7 +752,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 7,
-        [_Location_line]: 16,
+        [_Location_line]: 18,
         [_Location_file]: null
       });
     },
@@ -766,7 +765,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C84 || CT.C84,
         [_Location_name]: null,
         [_Location_column]: 12,
-        [_Location_line]: 14,
+        [_Location_line]: 16,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     },
@@ -776,7 +775,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "mainAxisAlignment",
         [_Location_column]: 9,
-        [_Location_line]: 99,
+        [_Location_line]: 104,
         [_Location_file]: null
       });
     },
@@ -786,7 +785,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 9,
-        [_Location_line]: 100,
+        [_Location_line]: 105,
         [_Location_file]: null
       });
     },
@@ -799,7 +798,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C88 || CT.C88,
         [_Location_name]: null,
         [_Location_column]: 14,
-        [_Location_line]: 98,
+        [_Location_line]: 103,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     },
@@ -809,7 +808,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 7,
-        [_Location_line]: 98,
+        [_Location_line]: 103,
         [_Location_file]: null
       });
     },
@@ -822,877 +821,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
         [_Location_parameterLocations]: C92 || CT.C92,
         [_Location_name]: null,
         [_Location_column]: 12,
-        [_Location_line]: 97,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C94() {
-      return C94 = dart.const({
-        __proto__: edge_insets.EdgeInsets.prototype,
-        [EdgeInsets_bottom]: 8,
-        [EdgeInsets_right]: 0,
-        [EdgeInsets_top]: 0,
-        [EdgeInsets_left]: 0
-      });
-    },
-    get C97() {
-      return C97 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "width",
-        [_Location_column]: 25,
-        [_Location_line]: 143,
-        [_Location_file]: null
-      });
-    },
-    get C96() {
-      return C96 = dart.constList([C97 || CT.C97], widget_inspector._Location);
-    },
-    get C95() {
-      return C95 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C96 || CT.C96,
-        [_Location_name]: null,
-        [_Location_column]: 23,
-        [_Location_line]: 142,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C100() {
-      return C100 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "icon",
-        [_Location_column]: 47,
-        [_Location_line]: 155,
-        [_Location_file]: null
-      });
-    },
-    get C101() {
-      return C101 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "color",
-        [_Location_column]: 61,
-        [_Location_line]: 155,
-        [_Location_file]: null
-      });
-    },
-    get C102() {
-      return C102 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "size",
-        [_Location_column]: 82,
-        [_Location_line]: 155,
-        [_Location_file]: null
-      });
-    },
-    get C99() {
-      return C99 = dart.constList([C100 || CT.C100, C101 || CT.C101, C102 || CT.C102], widget_inspector._Location);
-    },
-    get C98() {
-      return C98 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C99 || CT.C99,
-        [_Location_name]: null,
-        [_Location_column]: 36,
-        [_Location_line]: 155,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C105() {
-      return C105 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "height",
-        [_Location_column]: 29,
-        [_Location_line]: 149,
-        [_Location_file]: null
-      });
-    },
-    get C106() {
-      return C106 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "width",
-        [_Location_column]: 29,
-        [_Location_line]: 150,
-        [_Location_file]: null
-      });
-    },
-    get C107() {
-      return C107 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "decoration",
-        [_Location_column]: 29,
-        [_Location_line]: 151,
-        [_Location_file]: null
-      });
-    },
-    get C108() {
-      return C108 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "child",
-        [_Location_column]: 29,
-        [_Location_line]: 155,
-        [_Location_file]: null
-      });
-    },
-    get C104() {
-      return C104 = dart.constList([C105 || CT.C105, C106 || CT.C106, C107 || CT.C107, C108 || CT.C108], widget_inspector._Location);
-    },
-    get C103() {
-      return C103 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C104 || CT.C104,
-        [_Location_name]: null,
-        [_Location_column]: 27,
-        [_Location_line]: 148,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C111() {
-      return C111 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "height",
-        [_Location_column]: 29,
-        [_Location_line]: 158,
-        [_Location_file]: null
-      });
-    },
-    get C110() {
-      return C110 = dart.constList([C111 || CT.C111], widget_inspector._Location);
-    },
-    get C109() {
-      return C109 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C110 || CT.C110,
-        [_Location_name]: null,
-        [_Location_column]: 27,
-        [_Location_line]: 157,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C114() {
-      return C114 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "data",
-        [_Location_column]: 32,
-        [_Location_line]: 160,
-        [_Location_file]: null
-      });
-    },
-    get C115() {
-      return C115 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "style",
-        [_Location_column]: 29,
-        [_Location_line]: 161,
-        [_Location_file]: null
-      });
-    },
-    get C116() {
-      return C116 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "textAlign",
-        [_Location_column]: 29,
-        [_Location_line]: 165,
-        [_Location_file]: null
-      });
-    },
-    get C113() {
-      return C113 = dart.constList([C114 || CT.C114, C115 || CT.C115, C116 || CT.C116], widget_inspector._Location);
-    },
-    get C112() {
-      return C112 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C113 || CT.C113,
-        [_Location_name]: null,
-        [_Location_column]: 27,
-        [_Location_line]: 160,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C119() {
-      return C119 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "mainAxisAlignment",
-        [_Location_column]: 25,
-        [_Location_line]: 146,
-        [_Location_file]: null
-      });
-    },
-    get C120() {
-      return C120 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "children",
-        [_Location_column]: 25,
-        [_Location_line]: 147,
-        [_Location_file]: null
-      });
-    },
-    get C118() {
-      return C118 = dart.constList([C119 || CT.C119, C120 || CT.C120], widget_inspector._Location);
-    },
-    get C117() {
-      return C117 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C118 || CT.C118,
-        [_Location_name]: null,
-        [_Location_column]: 23,
-        [_Location_line]: 145,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C123() {
-      return C123 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "children",
-        [_Location_column]: 21,
-        [_Location_line]: 141,
-        [_Location_file]: null
-      });
-    },
-    get C122() {
-      return C122 = dart.constList([C123 || CT.C123], widget_inspector._Location);
-    },
-    get C121() {
-      return C121 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C122 || CT.C122,
-        [_Location_name]: null,
-        [_Location_column]: 26,
-        [_Location_line]: 140,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C126() {
-      return C126 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "height",
-        [_Location_column]: 19,
-        [_Location_line]: 132,
-        [_Location_file]: null
-      });
-    },
-    get C127() {
-      return C127 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "decoration",
-        [_Location_column]: 19,
-        [_Location_line]: 133,
-        [_Location_file]: null
-      });
-    },
-    get C128() {
-      return C128 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "child",
-        [_Location_column]: 19,
-        [_Location_line]: 140,
-        [_Location_file]: null
-      });
-    },
-    get C125() {
-      return C125 = dart.constList([C126 || CT.C126, C127 || CT.C127, C128 || CT.C128], widget_inspector._Location);
-    },
-    get C124() {
-      return C124 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C125 || CT.C125,
-        [_Location_name]: null,
-        [_Location_column]: 24,
-        [_Location_line]: 131,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C131() {
-      return C131 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "color",
-        [_Location_column]: 17,
-        [_Location_line]: 129,
-        [_Location_file]: null
-      });
-    },
-    get C132() {
-      return C132 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "elevation",
-        [_Location_column]: 17,
-        [_Location_line]: 130,
-        [_Location_file]: null
-      });
-    },
-    get C133() {
-      return C133 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "child",
-        [_Location_column]: 17,
-        [_Location_line]: 131,
-        [_Location_file]: null
-      });
-    },
-    get C130() {
-      return C130 = dart.constList([C131 || CT.C131, C132 || CT.C132, C133 || CT.C133], widget_inspector._Location);
-    },
-    get C129() {
-      return C129 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C130 || CT.C130,
-        [_Location_name]: null,
-        [_Location_column]: 15,
-        [_Location_line]: 128,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C134() {
-      return C134 = dart.const({
-        __proto__: edge_insets.EdgeInsets.prototype,
-        [EdgeInsets_bottom]: 0,
-        [EdgeInsets_right]: 5,
-        [EdgeInsets_top]: 0,
-        [EdgeInsets_left]: 5
-      });
-    },
-    get C137() {
-      return C137 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "decoration",
-        [_Location_column]: 21,
-        [_Location_line]: 178,
-        [_Location_file]: null
-      });
-    },
-    get C138() {
-      return C138 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "duration",
-        [_Location_column]: 21,
-        [_Location_line]: 185,
-        [_Location_file]: null
-      });
-    },
-    get C139() {
-      return C139 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "height",
-        [_Location_column]: 21,
-        [_Location_line]: 186,
-        [_Location_file]: null
-      });
-    },
-    get C136() {
-      return C136 = dart.constList([C137 || CT.C137, C138 || CT.C138, C139 || CT.C139], widget_inspector._Location);
-    },
-    get C135() {
-      return C135 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C136 || CT.C136,
-        [_Location_name]: null,
-        [_Location_column]: 26,
-        [_Location_line]: 177,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C142() {
-      return C142 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "padding",
-        [_Location_column]: 19,
-        [_Location_line]: 176,
-        [_Location_file]: null
-      });
-    },
-    get C143() {
-      return C143 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "child",
-        [_Location_column]: 19,
-        [_Location_line]: 177,
-        [_Location_file]: null
-      });
-    },
-    get C141() {
-      return C141 = dart.constList([C142 || CT.C142, C143 || CT.C143], widget_inspector._Location);
-    },
-    get C140() {
-      return C140 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C141 || CT.C141,
-        [_Location_name]: null,
-        [_Location_column]: 24,
-        [_Location_line]: 175,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C146() {
-      return C146 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "opacity",
-        [_Location_column]: 17,
-        [_Location_line]: 174,
-        [_Location_file]: null
-      });
-    },
-    get C147() {
-      return C147 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "child",
-        [_Location_column]: 17,
-        [_Location_line]: 175,
-        [_Location_file]: null
-      });
-    },
-    get C145() {
-      return C145 = dart.constList([C146 || CT.C146, C147 || CT.C147], widget_inspector._Location);
-    },
-    get C144() {
-      return C144 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C145 || CT.C145,
-        [_Location_name]: null,
-        [_Location_column]: 15,
-        [_Location_line]: 173,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C150() {
-      return C150 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "data",
-        [_Location_column]: 30,
-        [_Location_line]: 218,
-        [_Location_file]: null
-      });
-    },
-    get C151() {
-      return C151 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "style",
-        [_Location_column]: 27,
-        [_Location_line]: 219,
-        [_Location_file]: null
-      });
-    },
-    get C149() {
-      return C149 = dart.constList([C150 || CT.C150, C151 || CT.C151], widget_inspector._Location);
-    },
-    get C148() {
-      return C148 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C149 || CT.C149,
-        [_Location_name]: null,
-        [_Location_column]: 25,
-        [_Location_line]: 218,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C154() {
-      return C154 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "icon",
-        [_Location_column]: 46,
-        [_Location_line]: 225,
-        [_Location_file]: null
-      });
-    },
-    get C155() {
-      return C155 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "color",
-        [_Location_column]: 60,
-        [_Location_line]: 225,
-        [_Location_file]: null
-      });
-    },
-    get C156() {
-      return C156 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "size",
-        [_Location_column]: 81,
-        [_Location_line]: 225,
-        [_Location_file]: null
-      });
-    },
-    get C153() {
-      return C153 = dart.constList([C154 || CT.C154, C155 || CT.C155, C156 || CT.C156], widget_inspector._Location);
-    },
-    get C152() {
-      return C152 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C153 || CT.C153,
-        [_Location_name]: null,
-        [_Location_column]: 35,
-        [_Location_line]: 225,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C159() {
-      return C159 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "icon",
-        [_Location_column]: 103,
-        [_Location_line]: 225,
-        [_Location_file]: null
-      });
-    },
-    get C160() {
-      return C160 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "color",
-        [_Location_column]: 119,
-        [_Location_line]: 225,
-        [_Location_file]: null
-      });
-    },
-    get C161() {
-      return C161 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "size",
-        [_Location_column]: 140,
-        [_Location_line]: 225,
-        [_Location_file]: null
-      });
-    },
-    get C158() {
-      return C158 = dart.constList([C159 || CT.C159, C160 || CT.C160, C161 || CT.C161], widget_inspector._Location);
-    },
-    get C157() {
-      return C157 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C158 || CT.C158,
-        [_Location_name]: null,
-        [_Location_column]: 92,
-        [_Location_line]: 225,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C164() {
-      return C164 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "mainAxisAlignment",
-        [_Location_column]: 23,
-        [_Location_line]: 216,
-        [_Location_file]: null
-      });
-    },
-    get C165() {
-      return C165 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "children",
-        [_Location_column]: 23,
-        [_Location_line]: 217,
-        [_Location_file]: null
-      });
-    },
-    get C163() {
-      return C163 = dart.constList([C164 || CT.C164, C165 || CT.C165], widget_inspector._Location);
-    },
-    get C162() {
-      return C162 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C163 || CT.C163,
-        [_Location_name]: null,
-        [_Location_column]: 28,
-        [_Location_line]: 215,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C168() {
-      return C168 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "borderRadius",
-        [_Location_column]: 21,
-        [_Location_line]: 206,
-        [_Location_file]: null
-      });
-    },
-    get C169() {
-      return C169 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "onTap",
-        [_Location_column]: 21,
-        [_Location_line]: 210,
-        [_Location_file]: null
-      });
-    },
-    get C170() {
-      return C170 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "child",
-        [_Location_column]: 21,
-        [_Location_line]: 215,
-        [_Location_file]: null
-      });
-    },
-    get C167() {
-      return C167 = dart.constList([C168 || CT.C168, C169 || CT.C169, C170 || CT.C170], widget_inspector._Location);
-    },
-    get C166() {
-      return C166 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C167 || CT.C167,
-        [_Location_name]: null,
-        [_Location_column]: 26,
-        [_Location_line]: 205,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C173() {
-      return C173 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "elevation",
-        [_Location_column]: 19,
-        [_Location_line]: 203,
-        [_Location_file]: null
-      });
-    },
-    get C174() {
-      return C174 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "color",
-        [_Location_column]: 19,
-        [_Location_line]: 204,
-        [_Location_file]: null
-      });
-    },
-    get C175() {
-      return C175 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "child",
-        [_Location_column]: 19,
-        [_Location_line]: 205,
-        [_Location_file]: null
-      });
-    },
-    get C172() {
-      return C172 = dart.constList([C173 || CT.C173, C174 || CT.C174, C175 || CT.C175], widget_inspector._Location);
-    },
-    get C171() {
-      return C171 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C172 || CT.C172,
-        [_Location_name]: null,
-        [_Location_column]: 24,
-        [_Location_line]: 202,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C178() {
-      return C178 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "height",
-        [_Location_column]: 17,
-        [_Location_line]: 191,
-        [_Location_file]: null
-      });
-    },
-    get C179() {
-      return C179 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "decoration",
-        [_Location_column]: 17,
-        [_Location_line]: 192,
-        [_Location_file]: null
-      });
-    },
-    get C180() {
-      return C180 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "child",
-        [_Location_column]: 17,
-        [_Location_line]: 202,
-        [_Location_file]: null
-      });
-    },
-    get C177() {
-      return C177 = dart.constList([C178 || CT.C178, C179 || CT.C179, C180 || CT.C180], widget_inspector._Location);
-    },
-    get C176() {
-      return C176 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C177 || CT.C177,
-        [_Location_name]: null,
-        [_Location_column]: 15,
-        [_Location_line]: 190,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C183() {
-      return C183 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "height",
-        [_Location_column]: 24,
-        [_Location_line]: 231,
-        [_Location_file]: null
-      });
-    },
-    get C182() {
-      return C182 = dart.constList([C183 || CT.C183], widget_inspector._Location);
-    },
-    get C181() {
-      return C181 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C182 || CT.C182,
-        [_Location_name]: null,
-        [_Location_column]: 15,
-        [_Location_line]: 231,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C186() {
-      return C186 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "children",
-        [_Location_column]: 13,
-        [_Location_line]: 127,
-        [_Location_file]: null
-      });
-    },
-    get C185() {
-      return C185 = dart.constList([C186 || CT.C186], widget_inspector._Location);
-    },
-    get C184() {
-      return C184 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C185 || CT.C185,
-        [_Location_name]: null,
-        [_Location_column]: 18,
-        [_Location_line]: 126,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C189() {
-      return C189 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "width",
-        [_Location_column]: 11,
-        [_Location_line]: 125,
-        [_Location_file]: null
-      });
-    },
-    get C190() {
-      return C190 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "child",
-        [_Location_column]: 11,
-        [_Location_line]: 126,
-        [_Location_file]: null
-      });
-    },
-    get C188() {
-      return C188 = dart.constList([C189 || CT.C189, C190 || CT.C190], widget_inspector._Location);
-    },
-    get C187() {
-      return C187 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C188 || CT.C188,
-        [_Location_name]: null,
-        [_Location_column]: 16,
-        [_Location_line]: 124,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C193() {
-      return C193 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "padding",
-        [_Location_column]: 9,
-        [_Location_line]: 123,
-        [_Location_file]: null
-      });
-    },
-    get C194() {
-      return C194 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "child",
-        [_Location_column]: 9,
-        [_Location_line]: 124,
-        [_Location_file]: null
-      });
-    },
-    get C192() {
-      return C192 = dart.constList([C193 || CT.C193, C194 || CT.C194], widget_inspector._Location);
-    },
-    get C191() {
-      return C191 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C192 || CT.C192,
-        [_Location_name]: null,
-        [_Location_column]: 14,
-        [_Location_line]: 122,
-        [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
-      });
-    },
-    get C197() {
-      return C197 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: null,
-        [_Location_name]: "child",
-        [_Location_column]: 7,
-        [_Location_line]: 122,
-        [_Location_file]: null
-      });
-    },
-    get C196() {
-      return C196 = dart.constList([C197 || CT.C197], widget_inspector._Location);
-    },
-    get C195() {
-      return C195 = dart.const({
-        __proto__: widget_inspector._Location.prototype,
-        [_Location_parameterLocations]: C196 || CT.C196,
-        [_Location_name]: null,
-        [_Location_column]: 12,
-        [_Location_line]: 121,
+        [_Location_line]: 102,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/statusCard.dart"
       });
     }
@@ -1812,11 +941,12 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
   var C83;
   statusCard._TestCardState = class _TestCardState extends framework.State$(statusCard.TestCard) {
     build(context) {
-      return new basic.Padding.new({padding: C0 || CT.C0, child: new basic.Column.new({children: JSArrayOfWidget().of([new container.Container.new({width: theme.wWidth(800.0), child: new card.Card.new({color: colors.Colors.transparent, elevation: 5.0, margin: new edge_insets.EdgeInsets.only({right: 10.0, left: 10.0, top: 10.0}), child: new container.Container.new({decoration: new box_decoration.BoxDecoration.new({color: theme.card}), child: new material.Material.new({color: colors.Colors.transparent, child: new ink_well.InkWell.new({hoverColor: colors.Colors.yellowAccent, child: new list_tile.ListTile.new({onTap: dart.fn(() => {
+      let _media = media_query.MediaQuery.of(context).size;
+      return new basic.Padding.new({padding: C0 || CT.C0, child: new basic.Column.new({children: JSArrayOfWidget().of([new container.Container.new({width: dart.notNull(_media.width) * 0.8, child: new card.Card.new({color: colors.Colors.transparent, elevation: 5.0, margin: new edge_insets.EdgeInsets.only({right: 10.0, left: 10.0, top: 10.0}), child: new container.Container.new({decoration: new box_decoration.BoxDecoration.new({color: theme.card, borderRadius: new border_radius.BorderRadius.all(new ui.Radius.circular(5.0))}), child: new material.Material.new({color: colors.Colors.transparent, child: new ink_well.InkWell.new({borderRadius: new border_radius.BorderRadius.circular(5.0), child: new list_tile.ListTile.new({onTap: dart.fn(() => {
                           this.setState(dart.fn(() => {
                             dart.test(this[_expanded]) ? this[_expanded] = false : this[_expanded] = true;
                           }, VoidToNull()));
-                        }, VoidToNull()), contentPadding: new edge_insets.EdgeInsets.symmetric({horizontal: 20.0, vertical: 10.0}), leading: new basic.Column.new({mainAxisAlignment: flex.MainAxisAlignment.center, children: JSArrayOfWidget().of([new container.Container.new({padding: new edge_insets.EdgeInsets.only({right: 12.0}), decoration: new box_decoration.BoxDecoration.new({border: new box_border.Border.new({right: new borders.BorderSide.new({width: 1.0, color: colors.Colors.white24})})}), child: new icon.Icon.new(line_awesome_icons.LineAwesomeIcons.exclamation_circle, {color: colors.Colors.white, $creationLocationd_0dea112b090073317d4: C1 || CT.C1}), $creationLocationd_0dea112b090073317d4: C5 || CT.C5})]), $creationLocationd_0dea112b090073317d4: C10 || CT.C10}), dense: true, isThreeLine: false, title: new text.Text.new("Placeholder Text", {style: new text_style.TextStyle.new({color: colors.Colors.white, fontWeight: ui.FontWeight.bold}), $creationLocationd_0dea112b090073317d4: C14 || CT.C14}), subtitle: new basic.Row.new({children: JSArrayOfWidget().of([new icon.Icon.new(icons.Icons.linear_scale, {color: colors.Colors.yellowAccent, $creationLocationd_0dea112b090073317d4: C18 || CT.C18}), new text.Text.new("Pending", {style: new text_style.TextStyle.new({color: colors.Colors.white}), $creationLocationd_0dea112b090073317d4: C22 || CT.C22})]), $creationLocationd_0dea112b090073317d4: C26 || CT.C26}), trailing: dart.test(this[_expanded]) ? new icon.Icon.new(icons.Icons.keyboard_arrow_up, {color: colors.Colors.white, size: 30.0, $creationLocationd_0dea112b090073317d4: C29 || CT.C29}) : new icon.Icon.new(icons.Icons.keyboard_arrow_down, {color: colors.Colors.white, size: 30.0, $creationLocationd_0dea112b090073317d4: C34 || CT.C34}), $creationLocationd_0dea112b090073317d4: C39 || CT.C39}), $creationLocationd_0dea112b090073317d4: C49 || CT.C49}), $creationLocationd_0dea112b090073317d4: C53 || CT.C53}), $creationLocationd_0dea112b090073317d4: C57 || CT.C57}), $creationLocationd_0dea112b090073317d4: C61 || CT.C61}), $creationLocationd_0dea112b090073317d4: C67 || CT.C67}), new implicit_animations.AnimatedContainer.new({width: theme.wWidth(750.0), decoration: new box_decoration.BoxDecoration.new({color: colors.Colors.grey.shade50, border: new box_border.Border.new(), borderRadius: new border_radius.BorderRadius.only({bottomLeft: new ui.Radius.circular(5.0), bottomRight: new ui.Radius.circular(5.0)})}), duration: new core.Duration.new({milliseconds: 170}), height: dart.test(this[_expanded]) ? 150.0 : 0.0, child: new statusCard.StatusInfo.new({$creationLocationd_0dea112b090073317d4: C71 || CT.C71}), $creationLocationd_0dea112b090073317d4: C73 || CT.C73})]), $creationLocationd_0dea112b090073317d4: C80 || CT.C80}), $creationLocationd_0dea112b090073317d4: C83 || CT.C83});
+                        }, VoidToNull()), contentPadding: new edge_insets.EdgeInsets.symmetric({horizontal: 20.0, vertical: 10.0}), leading: new basic.Column.new({mainAxisAlignment: flex.MainAxisAlignment.center, children: JSArrayOfWidget().of([new container.Container.new({padding: new edge_insets.EdgeInsets.only({right: 12.0}), decoration: new box_decoration.BoxDecoration.new({border: new box_border.Border.new({right: new borders.BorderSide.new({width: 1.0, color: colors.Colors.white24})})}), child: new icon.Icon.new(line_awesome_icons.LineAwesomeIcons.exclamation_circle, {color: colors.Colors.white, $creationLocationd_0dea112b090073317d4: C1 || CT.C1}), $creationLocationd_0dea112b090073317d4: C5 || CT.C5})]), $creationLocationd_0dea112b090073317d4: C10 || CT.C10}), dense: true, isThreeLine: false, title: new text.Text.new("Placeholder Text", {style: new text_style.TextStyle.new({color: colors.Colors.white, fontWeight: ui.FontWeight.bold}), $creationLocationd_0dea112b090073317d4: C14 || CT.C14}), subtitle: new basic.Row.new({children: JSArrayOfWidget().of([new icon.Icon.new(icons.Icons.linear_scale, {color: colors.Colors.yellowAccent, $creationLocationd_0dea112b090073317d4: C18 || CT.C18}), new text.Text.new("Pending", {style: new text_style.TextStyle.new({color: colors.Colors.white}), $creationLocationd_0dea112b090073317d4: C22 || CT.C22})]), $creationLocationd_0dea112b090073317d4: C26 || CT.C26}), trailing: dart.test(this[_expanded]) ? new icon.Icon.new(icons.Icons.keyboard_arrow_up, {color: colors.Colors.white, size: 30.0, $creationLocationd_0dea112b090073317d4: C29 || CT.C29}) : new icon.Icon.new(icons.Icons.keyboard_arrow_down, {color: colors.Colors.white, size: 30.0, $creationLocationd_0dea112b090073317d4: C34 || CT.C34}), $creationLocationd_0dea112b090073317d4: C39 || CT.C39}), $creationLocationd_0dea112b090073317d4: C49 || CT.C49}), $creationLocationd_0dea112b090073317d4: C53 || CT.C53}), $creationLocationd_0dea112b090073317d4: C57 || CT.C57}), $creationLocationd_0dea112b090073317d4: C61 || CT.C61}), $creationLocationd_0dea112b090073317d4: C67 || CT.C67}), new implicit_animations.AnimatedContainer.new({width: dart.notNull(_media.width) * 0.75, decoration: new box_decoration.BoxDecoration.new({color: colors.Colors.grey.shade50, border: new box_border.Border.new(), borderRadius: new border_radius.BorderRadius.only({bottomLeft: new ui.Radius.circular(5.0), bottomRight: new ui.Radius.circular(5.0)})}), duration: new core.Duration.new({milliseconds: 170}), height: dart.test(this[_expanded]) ? 150.0 : 0.0, child: new statusCard.StatusInfo.new({$creationLocationd_0dea112b090073317d4: C71 || CT.C71}), $creationLocationd_0dea112b090073317d4: C73 || CT.C73})]), $creationLocationd_0dea112b090073317d4: C80 || CT.C80}), $creationLocationd_0dea112b090073317d4: C83 || CT.C83});
     }
   };
   (statusCard._TestCardState.new = function() {
@@ -1872,154 +1002,10 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/sr
     build: dart.fnType(framework.Widget, [framework.BuildContext])
   }));
   dart.setLibraryUri(statusCard._StatusInfoState, "package:pda_portal/ui_2/statusCard.dart");
-  statusCard.reqCard = class reqCard extends framework.StatefulWidget {
-    createState() {
-      return new statusCard._reqCardState.new();
-    }
-  };
-  (statusCard.reqCard.new = function(opts) {
-    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
-    statusCard.reqCard.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
-    ;
-  }).prototype = statusCard.reqCard.prototype;
-  dart.addTypeTests(statusCard.reqCard);
-  dart.setMethodSignature(statusCard.reqCard, () => ({
-    __proto__: dart.getMethods(statusCard.reqCard.__proto__),
-    createState: dart.fnType(statusCard._reqCardState, [])
-  }));
-  dart.setLibraryUri(statusCard.reqCard, "package:pda_portal/ui_2/statusCard.dart");
-  var C94;
-  var C97;
-  var C96;
-  var C95;
-  var C100;
-  var C101;
-  var C102;
-  var C99;
-  var C98;
-  var C105;
-  var C106;
-  var C107;
-  var C108;
-  var C104;
-  var C103;
-  var C111;
-  var C110;
-  var C109;
-  var C114;
-  var C115;
-  var C116;
-  var C113;
-  var C112;
-  var C119;
-  var C120;
-  var C118;
-  var C117;
-  var C123;
-  var C122;
-  var C121;
-  var C126;
-  var C127;
-  var C128;
-  var C125;
-  var C124;
-  var C131;
-  var C132;
-  var C133;
-  var C130;
-  var C129;
-  var C134;
-  var C137;
-  var C138;
-  var C139;
-  var C136;
-  var C135;
-  var C142;
-  var C143;
-  var C141;
-  var C140;
-  var C146;
-  var C147;
-  var C145;
-  var C144;
-  var C150;
-  var C151;
-  var C149;
-  var C148;
-  var C154;
-  var C155;
-  var C156;
-  var C153;
-  var C152;
-  var C159;
-  var C160;
-  var C161;
-  var C158;
-  var C157;
-  var C164;
-  var C165;
-  var C163;
-  var C162;
-  var C168;
-  var C169;
-  var C170;
-  var C167;
-  var C166;
-  var C173;
-  var C174;
-  var C175;
-  var C172;
-  var C171;
-  var C178;
-  var C179;
-  var C180;
-  var C177;
-  var C176;
-  var C183;
-  var C182;
-  var C181;
-  var C186;
-  var C185;
-  var C184;
-  var C189;
-  var C190;
-  var C188;
-  var C187;
-  var C193;
-  var C194;
-  var C192;
-  var C191;
-  var C197;
-  var C196;
-  var C195;
-  statusCard._reqCardState = class _reqCardState extends framework.State$(statusCard.reqCard) {
-    build(context) {
-      return new basic.Center.new({child: new basic.Padding.new({padding: C94 || CT.C94, child: new container.Container.new({width: theme.wWidth(750.0), child: new basic.Column.new({children: JSArrayOfWidget().of([new material.Material.new({color: colors.Colors.transparent, elevation: 5.0, child: new container.Container.new({height: theme.wHeight(100.0), decoration: new box_decoration.BoxDecoration.new({borderRadius: new border_radius.BorderRadius.only({topLeft: new ui.Radius.circular(7.5), topRight: new ui.Radius.circular(7.5)}), color: colors.Colors.white}), child: new basic.Row.new({children: JSArrayOfWidget().of([new basic.SizedBox.new({width: 10.0, $creationLocationd_0dea112b090073317d4: C95 || CT.C95}), new basic.Column.new({mainAxisAlignment: flex.MainAxisAlignment.center, children: JSArrayOfWidget().of([new container.Container.new({height: theme.wHeight(50.0), width: theme.wWidth(50.0), decoration: new box_decoration.BoxDecoration.new({shape: box_border.BoxShape.circle, color: colors.Colors.blue}), child: new icon.Icon.new(icons.Icons.announcement, {color: colors.Colors.white, size: theme.wSize(25.0, 15), $creationLocationd_0dea112b090073317d4: C98 || CT.C98}), $creationLocationd_0dea112b090073317d4: C103 || CT.C103}), new basic.SizedBox.new({height: 5.0, $creationLocationd_0dea112b090073317d4: C109 || CT.C109}), new text.Text.new("ACTION\nREQUIRED", {style: new text_style.TextStyle.new({fontWeight: ui.FontWeight.w400, fontSize: 10.0}), textAlign: ui.TextAlign.center, $creationLocationd_0dea112b090073317d4: C112 || CT.C112})]), $creationLocationd_0dea112b090073317d4: C117 || CT.C117})]), $creationLocationd_0dea112b090073317d4: C121 || CT.C121}), $creationLocationd_0dea112b090073317d4: C124 || CT.C124}), $creationLocationd_0dea112b090073317d4: C129 || CT.C129}), new basic.Opacity.new({opacity: 1.0, child: new basic.Padding.new({padding: C134 || CT.C134, child: new implicit_animations.AnimatedContainer.new({decoration: new box_decoration.BoxDecoration.new({color: colors.Colors.grey.shade50, border: new box_border.Border.new({left: new borders.BorderSide.new({width: 1.0, color: colors.Colors.white}), right: new borders.BorderSide.new({width: 1.0, color: colors.Colors.white})})}), duration: new core.Duration.new({milliseconds: 200}), height: dart.test(this[_expanded]) ? 150.0 : 0.0, $creationLocationd_0dea112b090073317d4: C135 || CT.C135}), $creationLocationd_0dea112b090073317d4: C140 || CT.C140}), $creationLocationd_0dea112b090073317d4: C144 || CT.C144}), new container.Container.new({height: 30.0, decoration: new box_decoration.BoxDecoration.new({boxShadow: JSArrayOfBoxShadow().of([]), borderRadius: new border_radius.BorderRadius.only({bottomLeft: new ui.Radius.circular(7.5), bottomRight: new ui.Radius.circular(7.5)}), border: box_border.Border.all({width: 0.5, color: colors.Colors.white})}), child: new material.Material.new({elevation: 5.0, color: colors.Colors.transparent, child: new ink_well.InkWell.new({borderRadius: new border_radius.BorderRadius.only({bottomLeft: new ui.Radius.circular(7.5), bottomRight: new ui.Radius.circular(7.5)}), onTap: dart.fn(() => {
-                        this.setState(dart.fn(() => {
-                          dart.test(this[_expanded]) ? this[_expanded] = false : this[_expanded] = true;
-                        }, VoidToNull()));
-                      }, VoidToNull()), child: new basic.Row.new({mainAxisAlignment: flex.MainAxisAlignment.center, children: JSArrayOfWidget().of([new text.Text.new("STATUS", {style: new text_style.TextStyle.new({color: colors.Colors.white, fontWeight: ui.FontWeight.bold, fontSize: 12.0}), $creationLocationd_0dea112b090073317d4: C148 || CT.C148}), dart.test(this[_expanded]) ? new icon.Icon.new(icons.Icons.arrow_drop_up, {color: colors.Colors.white, size: 12.0, $creationLocationd_0dea112b090073317d4: C152 || CT.C152}) : new icon.Icon.new(icons.Icons.arrow_drop_down, {color: colors.Colors.white, size: 12.0, $creationLocationd_0dea112b090073317d4: C157 || CT.C157})]), $creationLocationd_0dea112b090073317d4: C162 || CT.C162}), $creationLocationd_0dea112b090073317d4: C166 || CT.C166}), $creationLocationd_0dea112b090073317d4: C171 || CT.C171}), $creationLocationd_0dea112b090073317d4: C176 || CT.C176}), new basic.SizedBox.new({height: 10.0, $creationLocationd_0dea112b090073317d4: C181 || CT.C181})]), $creationLocationd_0dea112b090073317d4: C184 || CT.C184}), $creationLocationd_0dea112b090073317d4: C187 || CT.C187}), $creationLocationd_0dea112b090073317d4: C191 || CT.C191}), $creationLocationd_0dea112b090073317d4: C195 || CT.C195});
-    }
-  };
-  (statusCard._reqCardState.new = function() {
-    this[_expanded] = false;
-    statusCard._reqCardState.__proto__.new.call(this);
-    ;
-  }).prototype = statusCard._reqCardState.prototype;
-  dart.addTypeTests(statusCard._reqCardState);
-  dart.setMethodSignature(statusCard._reqCardState, () => ({
-    __proto__: dart.getMethods(statusCard._reqCardState.__proto__),
-    build: dart.fnType(framework.Widget, [framework.BuildContext])
-  }));
-  dart.setLibraryUri(statusCard._reqCardState, "package:pda_portal/ui_2/statusCard.dart");
-  dart.setFieldSignature(statusCard._reqCardState, () => ({
-    __proto__: dart.getFields(statusCard._reqCardState.__proto__),
-    [_expanded]: dart.fieldType(core.bool)
-  }));
   dart.trackLibraries("packages/pda_portal/ui_2/statusCard", {
     "package:pda_portal/ui_2/statusCard.dart": statusCard
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["statusCard.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAMkC;IAAgB;;;;;;EAClD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAK4B;AACxB,YAAO,qDAEE,gCACa,sBAChB,oCACS,aAAO,eACP,0BACS,sCACH,aACQ,wCAAY,YAAS,WAAQ,eACzC,yCACO,6CAAqB,qBAC1B,kCACS,kCACP,sCACc,mCACZ,mCACE;AAGH,0BAFF,cAAS;AACiC,sCAAxC,mBAAU,kBAAU,QAAM,kBAAU;;0DAGX,kDAAsB,gBAAgB,iBACxD,yCAC8B,yCACnB,sBAChB,sCACsB,wCAAY,oBACpB,8CACA,kCACG,mCAAkB,YAAmB,oCAC7C,kBAAsB,gEAAkC,qMAIhE,mBACM,cACJ,kBACL,4BACO,qCAAwB,iCAA8B,yFAErD,6BACU,sBAChB,kBAAW,kCAA4B,qFACvC,kBAAK,mBAAkB,qCAAwB,+JAInD,mBACG,kBAAW,uCAAiC,2BAAa,gEACzD,kBAAW,yCAAmC,2BAAa,qZAO5E,sDACS,aAAO,oBACF,6CACI,AAAK,oCACX,2CAEmB,iDAAwB,uBAAS,mBAAuB,uBAAS,oBAEpF,qCAAuB,yBACzB,mBAAU,QAAI,YACf;IAKjB;;;IA3EK,kBAAW;;;EA4ElB;;;;;;;;;;;;;AAIoC;IAAkB;;;;;;EACtD;;;;;;;;;;;;;;;UAI4B;AACxB,YAAO,qCACE,yCACgC,8CACnB;IAIxB;;;;;EACF;;;;;;;;;AASiC;IAAe;;;;;;EAChD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAK4B;AACxB,YAAO,8BACE,sDAEE,oCACE,aAAO,eACP,gCACa,sBAChB,kCACgB,sCACH,YACJ,qCACG,cAAQ,oBACJ,oDACiB,8CACP,uBAAS,gBACR,uBAAS,eAEhB,8BAET,6BACa,sBAChB,+BACS,+DAET,yCACuC,yCACnB,sBAChB,qCACU,cAAQ,cACT,aAAO,mBACF,6CACQ,mCACF,6BAEX,kBAAW,kCAA4B,2BAAa,YAAM,MAAI,yHAEvE,gCACU,gEAEV,kBAAK,4BACI,0CACoB,8BACb,mBAEO,gUAQnC,gCACW,YACF,wDAEE,2DACO,6CACI,AAAK,oCACX,iCACA,mCAAkB,YAAiB,8BAClC,mCAAkB,YAAiB,qCAGpC,qCAAuB,yBACzB,mBAAU,QAAI,sLAI5B,qCACU,kBACI,iDACG,2CAGgB,iDACJ,uBAAS,mBACR,uBAAS,gBAElB,8BAAW,YAAmB,gCAE1C,sCACM,YACG,kCACP,wCACsB,iDACN,uBAAS,mBACR,uBAAS,eAExB;AAGH,wBAFF,cAAS;AACiC,oCAAxC,mBAAU,kBAAU,QAAM,kBAAU;;+CAGjC,sCACgC,yCACnB,sBAChB,kBAAK,kBACI,qCACW,iCACS,8BACb,6EAGhB,mBAAU,kBAAW,mCAA4B,2BAAa,kEAAK,kBAAW,qCAA8B,2BAAa,+SAMnI,gCAAgB;IAM5B;;;IAvHK,kBAAW;;;EAwHlB","file":"statusCard.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["statusCard.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAOkC;IAAgB;;;;;;EAClD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAK4B;AAClB,mBAAmB,AAAY,0BAAT,OAAO;AACnC,YAAO,qDAEE,gCACa,sBAChB,oCACqB,aAAZ,AAAO,MAAD,UAAO,YACb,0BACS,sCACH,aACQ,wCAAY,YAAS,WAAQ,eACzC,yCACO,6CACD,0BACkB,mCAAW,uBAAS,gBAE1C,kCACS,kCACP,wCACsB,wCAAS,aAC7B,mCACE;AAGH,0BAFF,cAAS;AACiC,sCAAxC,mBAAU,kBAAU,QAAM,kBAAU;;0DAGX,kDAAsB,gBAAgB,iBACxD,yCAC8B,yCACnB,sBAChB,sCACsB,wCAAY,oBACpB,8CACA,kCACG,mCAAkB,YAAmB,oCAC7C,kBAAsB,gEAAkC,qMAIhE,mBACM,cACJ,kBACL,4BACO,qCAAwB,iCAA8B,yFAErD,6BACU,sBAChB,kBAAW,kCAA4B,qFACvC,kBAAK,mBAAkB,qCAAwB,+JAInD,mBACG,kBAAW,uCAAiC,2BAAa,gEACzD,kBAAW,yCAAmC,2BAAa,qZAO5E,sDACqB,aAAZ,AAAO,MAAD,UAAO,kBACR,6CACI,AAAK,oCACX,2CAEmB,iDAAwB,uBAAS,mBAAuB,uBAAS,oBAEpF,qCAAuB,yBACzB,mBAAU,QAAI,YACf;IAKjB;;;IA/EK,kBAAW;;;EAgFlB;;;;;;;;;;;;;AAIoC;IAAkB;;;;;;EACtD;;;;;;;;;;;;;;;UAI4B;AACxB,YAAO,qCACE,yCACgC,8CACnB;IAIxB;;;;;EACF","file":"statusCard.ddc.js"}');
   // Exports:
   return {
     ui_2__statusCard: statusCard

@@ -17,6 +17,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
   const single_child_scroll_view = packages__flutter__src__widgets__actions.src__widgets__single_child_scroll_view;
   const scroll_physics = packages__flutter__src__widgets__actions.src__widgets__scroll_physics;
   const scroll_view = packages__flutter__src__widgets__actions.src__widgets__scroll_view;
+  const ticker_provider = packages__flutter__src__widgets__actions.src__widgets__ticker_provider;
   const scrollbar = packages__flutter__material.src__material__scrollbar;
   const scaffold = packages__flutter__material.src__material__scaffold;
   const app_bar = packages__flutter__material.src__material__app_bar;
@@ -44,7 +45,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "icon",
         [_Location_column]: 40,
-        [_Location_line]: 27,
+        [_Location_line]: 25,
         [_Location_file]: null
       });
     },
@@ -57,7 +58,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C1 || CT.C1,
         [_Location_name]: null,
         [_Location_column]: 29,
-        [_Location_line]: 27,
+        [_Location_line]: 25,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -67,7 +68,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "icon",
         [_Location_column]: 23,
-        [_Location_line]: 27,
+        [_Location_line]: 25,
         [_Location_file]: null
       });
     },
@@ -77,7 +78,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "onPressed",
         [_Location_column]: 23,
-        [_Location_line]: 28,
+        [_Location_line]: 26,
         [_Location_file]: null
       });
     },
@@ -90,7 +91,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C4 || CT.C4,
         [_Location_name]: null,
         [_Location_column]: 28,
-        [_Location_line]: 26,
+        [_Location_line]: 24,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -100,7 +101,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "padding",
         [_Location_column]: 21,
-        [_Location_line]: 25,
+        [_Location_line]: 23,
         [_Location_file]: null
       });
     },
@@ -110,7 +111,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 21,
-        [_Location_line]: 26,
+        [_Location_line]: 24,
         [_Location_file]: null
       });
     },
@@ -123,7 +124,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C8 || CT.C8,
         [_Location_name]: null,
         [_Location_column]: 26,
-        [_Location_line]: 24,
+        [_Location_line]: 22,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -133,7 +134,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "data",
         [_Location_column]: 31,
-        [_Location_line]: 32,
+        [_Location_line]: 30,
         [_Location_file]: null
       });
     },
@@ -146,7 +147,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C12 || CT.C12,
         [_Location_name]: null,
         [_Location_column]: 26,
-        [_Location_line]: 32,
+        [_Location_line]: 30,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -156,7 +157,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "preferredSize",
         [_Location_column]: 19,
-        [_Location_line]: 31,
+        [_Location_line]: 29,
         [_Location_file]: null
       });
     },
@@ -166,7 +167,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 19,
-        [_Location_line]: 32,
+        [_Location_line]: 30,
         [_Location_file]: null
       });
     },
@@ -179,7 +180,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C15 || CT.C15,
         [_Location_name]: null,
         [_Location_column]: 25,
-        [_Location_line]: 30,
+        [_Location_line]: 28,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -189,7 +190,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "data",
         [_Location_column]: 21,
-        [_Location_line]: 42,
+        [_Location_line]: 40,
         [_Location_file]: null
       });
     },
@@ -199,7 +200,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "style",
         [_Location_column]: 21,
-        [_Location_line]: 43,
+        [_Location_line]: 41,
         [_Location_file]: null
       });
     },
@@ -212,7 +213,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C19 || CT.C19,
         [_Location_name]: null,
         [_Location_column]: 26,
-        [_Location_line]: 41,
+        [_Location_line]: 39,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -222,7 +223,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "collapseMode",
         [_Location_column]: 19,
-        [_Location_line]: 39,
+        [_Location_line]: 37,
         [_Location_file]: null
       });
     },
@@ -232,7 +233,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "titlePadding",
         [_Location_column]: 19,
-        [_Location_line]: 40,
+        [_Location_line]: 38,
         [_Location_file]: null
       });
     },
@@ -242,7 +243,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "title",
         [_Location_column]: 19,
-        [_Location_line]: 41,
+        [_Location_line]: 39,
         [_Location_file]: null
       });
     },
@@ -255,7 +256,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C23 || CT.C23,
         [_Location_name]: null,
         [_Location_column]: 32,
-        [_Location_line]: 38,
+        [_Location_line]: 36,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -265,7 +266,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "leading",
         [_Location_column]: 17,
-        [_Location_line]: 24,
+        [_Location_line]: 22,
         [_Location_file]: null
       });
     },
@@ -275,7 +276,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "bottom",
         [_Location_column]: 17,
-        [_Location_line]: 30,
+        [_Location_line]: 28,
         [_Location_file]: null
       });
     },
@@ -285,7 +286,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "backgroundColor",
         [_Location_column]: 17,
-        [_Location_line]: 34,
+        [_Location_line]: 32,
         [_Location_file]: null
       });
     },
@@ -295,7 +296,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "expandedHeight",
         [_Location_column]: 17,
-        [_Location_line]: 35,
+        [_Location_line]: 33,
         [_Location_file]: null
       });
     },
@@ -305,7 +306,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "floating",
         [_Location_column]: 17,
-        [_Location_line]: 36,
+        [_Location_line]: 34,
         [_Location_file]: null
       });
     },
@@ -315,7 +316,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "pinned",
         [_Location_column]: 17,
-        [_Location_line]: 37,
+        [_Location_line]: 35,
         [_Location_file]: null
       });
     },
@@ -325,7 +326,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "flexibleSpace",
         [_Location_column]: 17,
-        [_Location_line]: 38,
+        [_Location_line]: 36,
         [_Location_file]: null
       });
     },
@@ -338,7 +339,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C28 || CT.C28,
         [_Location_name]: null,
         [_Location_column]: 15,
-        [_Location_line]: 23,
+        [_Location_line]: 21,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -351,7 +352,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C37 || CT.C37,
         [_Location_name]: null,
         [_Location_column]: 34,
-        [_Location_line]: 66,
+        [_Location_line]: 64,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -361,7 +362,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "physics",
         [_Location_column]: 25,
-        [_Location_line]: 62,
+        [_Location_line]: 60,
         [_Location_file]: null
       });
     },
@@ -371,7 +372,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "shrinkWrap",
         [_Location_column]: 25,
-        [_Location_line]: 63,
+        [_Location_line]: 61,
         [_Location_file]: null
       });
     },
@@ -381,7 +382,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "itemCount",
         [_Location_column]: 25,
-        [_Location_line]: 64,
+        [_Location_line]: 62,
         [_Location_file]: null
       });
     },
@@ -391,7 +392,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "itemBuilder",
         [_Location_column]: 25,
-        [_Location_line]: 65,
+        [_Location_line]: 63,
         [_Location_file]: null
       });
     },
@@ -404,7 +405,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C39 || CT.C39,
         [_Location_name]: null,
         [_Location_column]: 37,
-        [_Location_line]: 61,
+        [_Location_line]: 59,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -414,7 +415,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 21,
-        [_Location_line]: 61,
+        [_Location_line]: 59,
         [_Location_file]: null
       });
     },
@@ -427,7 +428,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C45 || CT.C45,
         [_Location_name]: null,
         [_Location_column]: 19,
-        [_Location_line]: 60,
+        [_Location_line]: 58,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -437,7 +438,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "height",
         [_Location_column]: 21,
-        [_Location_line]: 70,
+        [_Location_line]: 68,
         [_Location_file]: null
       });
     },
@@ -450,7 +451,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C48 || CT.C48,
         [_Location_name]: null,
         [_Location_column]: 19,
-        [_Location_line]: 69,
+        [_Location_line]: 67,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -460,7 +461,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "filename",
         [_Location_column]: 47,
-        [_Location_line]: 78,
+        [_Location_line]: 76,
         [_Location_file]: null
       });
     },
@@ -470,7 +471,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "alignment",
         [_Location_column]: 31,
-        [_Location_line]: 79,
+        [_Location_line]: 77,
         [_Location_file]: null
       });
     },
@@ -480,7 +481,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "fit",
         [_Location_column]: 31,
-        [_Location_line]: 80,
+        [_Location_line]: 78,
         [_Location_file]: null
       });
     },
@@ -490,7 +491,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "animation",
         [_Location_column]: 31,
-        [_Location_line]: 81,
+        [_Location_line]: 79,
         [_Location_file]: null
       });
     },
@@ -503,7 +504,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C51 || CT.C51,
         [_Location_name]: null,
         [_Location_column]: 36,
-        [_Location_line]: 78,
+        [_Location_line]: 76,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -513,7 +514,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "height",
         [_Location_column]: 29,
-        [_Location_line]: 76,
+        [_Location_line]: 74,
         [_Location_file]: null
       });
     },
@@ -523,7 +524,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "width",
         [_Location_column]: 29,
-        [_Location_line]: 77,
+        [_Location_line]: 75,
         [_Location_file]: null
       });
     },
@@ -533,7 +534,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 29,
-        [_Location_line]: 78,
+        [_Location_line]: 76,
         [_Location_file]: null
       });
     },
@@ -546,7 +547,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C57 || CT.C57,
         [_Location_name]: null,
         [_Location_column]: 25,
-        [_Location_line]: 75,
+        [_Location_line]: 73,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -556,7 +557,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "data",
         [_Location_column]: 30,
-        [_Location_line]: 83,
+        [_Location_line]: 81,
         [_Location_file]: null
       });
     },
@@ -566,7 +567,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "style",
         [_Location_column]: 59,
-        [_Location_line]: 83,
+        [_Location_line]: 81,
         [_Location_file]: null
       });
     },
@@ -579,7 +580,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C62 || CT.C62,
         [_Location_name]: null,
         [_Location_column]: 25,
-        [_Location_line]: 83,
+        [_Location_line]: 81,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -589,7 +590,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 23,
-        [_Location_line]: 74,
+        [_Location_line]: 72,
         [_Location_file]: null
       });
     },
@@ -602,7 +603,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C66 || CT.C66,
         [_Location_name]: null,
         [_Location_column]: 28,
-        [_Location_line]: 73,
+        [_Location_line]: 71,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -612,7 +613,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 21,
-        [_Location_line]: 73,
+        [_Location_line]: 71,
         [_Location_file]: null
       });
     },
@@ -625,7 +626,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C69 || CT.C69,
         [_Location_name]: null,
         [_Location_column]: 19,
-        [_Location_line]: 72,
+        [_Location_line]: 70,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -635,7 +636,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "height",
         [_Location_column]: 21,
-        [_Location_line]: 88,
+        [_Location_line]: 86,
         [_Location_file]: null
       });
     },
@@ -648,7 +649,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C72 || CT.C72,
         [_Location_name]: null,
         [_Location_column]: 19,
-        [_Location_line]: 87,
+        [_Location_line]: 85,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -658,7 +659,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "crossAxisAlignment",
         [_Location_column]: 17,
-        [_Location_line]: 58,
+        [_Location_line]: 56,
         [_Location_file]: null
       });
     },
@@ -668,7 +669,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "children",
         [_Location_column]: 17,
-        [_Location_line]: 59,
+        [_Location_line]: 57,
         [_Location_file]: null
       });
     },
@@ -681,7 +682,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C75 || CT.C75,
         [_Location_name]: null,
         [_Location_column]: 22,
-        [_Location_line]: 57,
+        [_Location_line]: 55,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -691,7 +692,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "physics",
         [_Location_column]: 15,
-        [_Location_line]: 56,
+        [_Location_line]: 54,
         [_Location_file]: null
       });
     },
@@ -701,7 +702,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 15,
-        [_Location_line]: 57,
+        [_Location_line]: 55,
         [_Location_file]: null
       });
     },
@@ -714,7 +715,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C79 || CT.C79,
         [_Location_name]: null,
         [_Location_column]: 20,
-        [_Location_line]: 55,
+        [_Location_line]: 53,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -724,7 +725,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "width",
         [_Location_column]: 13,
-        [_Location_line]: 53,
+        [_Location_line]: 51,
         [_Location_file]: null
       });
     },
@@ -734,7 +735,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "color",
         [_Location_column]: 13,
-        [_Location_line]: 54,
+        [_Location_line]: 52,
         [_Location_file]: null
       });
     },
@@ -744,7 +745,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 13,
-        [_Location_line]: 55,
+        [_Location_line]: 53,
         [_Location_file]: null
       });
     },
@@ -757,7 +758,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C83 || CT.C83,
         [_Location_name]: null,
         [_Location_column]: 17,
-        [_Location_line]: 52,
+        [_Location_line]: 50,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -767,7 +768,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "headerSliverBuilder",
         [_Location_column]: 11,
-        [_Location_line]: 21,
+        [_Location_line]: 19,
         [_Location_file]: null
       });
     },
@@ -777,7 +778,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "body",
         [_Location_column]: 11,
-        [_Location_line]: 52,
+        [_Location_line]: 50,
         [_Location_file]: null
       });
     },
@@ -790,7 +791,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C88 || CT.C88,
         [_Location_name]: null,
         [_Location_column]: 15,
-        [_Location_line]: 20,
+        [_Location_line]: 18,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -800,7 +801,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "body",
         [_Location_column]: 9,
-        [_Location_line]: 20,
+        [_Location_line]: 18,
         [_Location_file]: null
       });
     },
@@ -813,7 +814,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C92 || CT.C92,
         [_Location_name]: null,
         [_Location_column]: 14,
-        [_Location_line]: 19,
+        [_Location_line]: 17,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     },
@@ -823,7 +824,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: null,
         [_Location_name]: "child",
         [_Location_column]: 7,
-        [_Location_line]: 19,
+        [_Location_line]: 17,
         [_Location_file]: null
       });
     },
@@ -836,7 +837,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
         [_Location_parameterLocations]: C95 || CT.C95,
         [_Location_name]: null,
         [_Location_column]: 12,
-        [_Location_line]: 18,
+        [_Location_line]: 16,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/ui_2/dashboard.dart"
       });
     }
@@ -959,11 +960,17 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
   var C96;
   var C95;
   var C94;
-  dashboard._DashboardState = class _DashboardState extends framework.State$(dashboard.Dashboard) {
+  const State_TickerProviderStateMixin$36 = class State_TickerProviderStateMixin extends framework.State$(dashboard.Dashboard) {};
+  (State_TickerProviderStateMixin$36.new = function() {
+    ticker_provider.TickerProviderStateMixin$(dashboard.Dashboard)[dart.mixinNew].call(this);
+    State_TickerProviderStateMixin$36.__proto__.new.call(this);
+  }).prototype = State_TickerProviderStateMixin$36.prototype;
+  dart.applyMixin(State_TickerProviderStateMixin$36, ticker_provider.TickerProviderStateMixin$(dashboard.Dashboard));
+  dashboard._DashboardState = class _DashboardState extends State_TickerProviderStateMixin$36 {
     build(context) {
       let _media = media_query.MediaQuery.of(context).size;
       return new scrollbar.Scrollbar.new({child: new scaffold.Scaffold.new({body: new nested_scroll_view.NestedScrollView.new({headerSliverBuilder: dart.fn((context, innerBoxIsScrolled) => JSArrayOfWidget().of([new app_bar.SliverAppBar.new({leading: new basic.Padding.new({padding: new edge_insets.EdgeInsets.only({top: 15.0, left: dart.notNull(_media.width) * 0.015}), child: new icon_button.IconButton.new({icon: new icon.Icon.new(icons.Icons.menu, {$creationLocationd_0dea112b090073317d4: C0 || CT.C0}), onPressed: dart.fn(() => {
-                    }, VoidToNull()), $creationLocationd_0dea112b090073317d4: C3 || CT.C3}), $creationLocationd_0dea112b090073317d4: C7 || CT.C7}), bottom: new preferred_size.PreferredSize.new({preferredSize: new ui.Size.fromHeight(15.0), child: new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C11 || CT.C11}), $creationLocationd_0dea112b090073317d4: C14 || CT.C14}), backgroundColor: theme.background, expandedHeight: 150.0, floating: false, pinned: true, flexibleSpace: new flexible_space_bar.FlexibleSpaceBar.new({collapseMode: flexible_space_bar.CollapseMode.parallax, titlePadding: new edge_insets.EdgeInsets.only({left: dart.notNull(_media.width) * 0.1, bottom: 15.0}), title: new text.Text.new("Pending Requests", {style: theme.textWhite.copyWith({fontSize: 35.0, fontWeight: ui.FontWeight.w300}), $creationLocationd_0dea112b090073317d4: C18 || CT.C18}), $creationLocationd_0dea112b090073317d4: C22 || CT.C22}), $creationLocationd_0dea112b090073317d4: C27 || CT.C27})]), BuildContextAndboolToListOfWidget()), body: new container.Container.new({width: _media.width, color: theme.background, child: new single_child_scroll_view.SingleChildScrollView.new({physics: new scroll_physics.BouncingScrollPhysics.new(), child: new basic.Column.new({crossAxisAlignment: flex.CrossAxisAlignment.start, children: JSArrayOfWidget().of([new basic.Center.new({child: new scroll_view.ListView.builder({physics: new scroll_physics.NeverScrollableScrollPhysics.new(), shrinkWrap: true, itemCount: 5, itemBuilder: dart.fn((context, index) => new statusCard.TestCard.new({$creationLocationd_0dea112b090073317d4: C36 || CT.C36}), BuildContextAndintToTestCard()), $creationLocationd_0dea112b090073317d4: C38 || CT.C38}), $creationLocationd_0dea112b090073317d4: C44 || CT.C44}), new basic.SizedBox.new({height: 20.0, $creationLocationd_0dea112b090073317d4: C47 || CT.C47}), new basic.Center.new({child: new basic.Column.new({children: JSArrayOfWidget().of([new container.Container.new({height: 150.0, width: 150.0, child: new flare_actor.FlareActor.new("assets/flare/empty.flr", {alignment: alignment.Alignment.center, fit: box_fit.BoxFit.contain, animation: "idle", $creationLocationd_0dea112b090073317d4: C50 || CT.C50}), $creationLocationd_0dea112b090073317d4: C56 || CT.C56}), new text.Text.new("Nothing more to see here!", {style: theme.textWhite, $creationLocationd_0dea112b090073317d4: C61 || CT.C61})]), $creationLocationd_0dea112b090073317d4: C65 || CT.C65}), $creationLocationd_0dea112b090073317d4: C68 || CT.C68}), new basic.SizedBox.new({height: 20.0, $creationLocationd_0dea112b090073317d4: C71 || CT.C71})]), $creationLocationd_0dea112b090073317d4: C74 || CT.C74}), $creationLocationd_0dea112b090073317d4: C78 || CT.C78}), $creationLocationd_0dea112b090073317d4: C82 || CT.C82}), $creationLocationd_0dea112b090073317d4: C87 || CT.C87}), $creationLocationd_0dea112b090073317d4: C91 || CT.C91}), $creationLocationd_0dea112b090073317d4: C94 || CT.C94});
+                    }, VoidToNull()), $creationLocationd_0dea112b090073317d4: C3 || CT.C3}), $creationLocationd_0dea112b090073317d4: C7 || CT.C7}), bottom: new preferred_size.PreferredSize.new({preferredSize: new ui.Size.fromHeight(15.0), child: new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C11 || CT.C11}), $creationLocationd_0dea112b090073317d4: C14 || CT.C14}), backgroundColor: theme.background, expandedHeight: 150.0, floating: false, pinned: true, flexibleSpace: new flexible_space_bar.FlexibleSpaceBar.new({collapseMode: flexible_space_bar.CollapseMode.parallax, titlePadding: new edge_insets.EdgeInsets.only({left: dart.notNull(_media.width) * 0.1, bottom: 15.0}), title: new text.Text.new("Pending Requests", {style: theme.textWhite.copyWith({fontSize: 35.0, fontWeight: ui.FontWeight.w300}), $creationLocationd_0dea112b090073317d4: C18 || CT.C18}), $creationLocationd_0dea112b090073317d4: C22 || CT.C22}), $creationLocationd_0dea112b090073317d4: C27 || CT.C27})]), BuildContextAndboolToListOfWidget()), body: new container.Container.new({width: _media.width, color: theme.background, child: new single_child_scroll_view.SingleChildScrollView.new({physics: new scroll_physics.BouncingScrollPhysics.new(), child: new basic.Column.new({crossAxisAlignment: flex.CrossAxisAlignment.start, children: JSArrayOfWidget().of([new basic.Center.new({child: new scroll_view.ListView.builder({physics: new scroll_physics.NeverScrollableScrollPhysics.new(), shrinkWrap: true, itemCount: 15, itemBuilder: dart.fn((context, index) => new statusCard.TestCard.new({$creationLocationd_0dea112b090073317d4: C36 || CT.C36}), BuildContextAndintToTestCard()), $creationLocationd_0dea112b090073317d4: C38 || CT.C38}), $creationLocationd_0dea112b090073317d4: C44 || CT.C44}), new basic.SizedBox.new({height: 20.0, $creationLocationd_0dea112b090073317d4: C47 || CT.C47}), new basic.Center.new({child: new basic.Column.new({children: JSArrayOfWidget().of([new container.Container.new({height: 150.0, width: 150.0, child: new flare_actor.FlareActor.new("assets/flare/empty.flr", {alignment: alignment.Alignment.center, fit: box_fit.BoxFit.contain, animation: "idle", $creationLocationd_0dea112b090073317d4: C50 || CT.C50}), $creationLocationd_0dea112b090073317d4: C56 || CT.C56}), new text.Text.new("Nothing more to see here!", {style: theme.textWhite, $creationLocationd_0dea112b090073317d4: C61 || CT.C61})]), $creationLocationd_0dea112b090073317d4: C65 || CT.C65}), $creationLocationd_0dea112b090073317d4: C68 || CT.C68}), new basic.SizedBox.new({height: 20.0, $creationLocationd_0dea112b090073317d4: C71 || CT.C71})]), $creationLocationd_0dea112b090073317d4: C74 || CT.C74}), $creationLocationd_0dea112b090073317d4: C78 || CT.C78}), $creationLocationd_0dea112b090073317d4: C82 || CT.C82}), $creationLocationd_0dea112b090073317d4: C87 || CT.C87}), $creationLocationd_0dea112b090073317d4: C91 || CT.C91}), $creationLocationd_0dea112b090073317d4: C94 || CT.C94});
     }
   };
   (dashboard._DashboardState.new = function() {
@@ -979,7 +986,7 @@ define(['dart_sdk', 'packages/flutter/src/widgets/actions', 'packages/flutter/ma
   dart.trackLibraries("packages/pda_portal/ui_2/dashboard", {
     "package:pda_portal/ui_2/dashboard.dart": dashboard
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["dashboard.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAUmC;IAAiB;;;;;;EACpD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAI4B;AAClB,mBAAoB,AAAY,0BAAT,OAAO;AACpC,YAAO,qCACE,iCACC,kEACiB,SAAc,SAAc,uBAChC,sBACb,uCACW,gCACe,sCAAU,YAAsB,aAAZ,AAAO,MAAD,UAAO,gBAC9C,sCACC,kBAAW,qFACN;4JAET,qDACc,uBAAW,cACxB,kBAAK,wIAEG,kCACD,iBACN,eACF,qBACO,2DACc,wDACF,uCAAuB,aAAZ,AAAO,MAAD,UAAO,aAAa,eACvD,kBACL,4BACO,AAAU,oCACL,kBACa,+OAO7B,oCACG,AAAO,MAAD,eACN,yBACA,iEACI,uDACF,0CACkC,yCACrB,sBAChB,6BACkB,2CACH,mEACG,iBACD,gBACE,SAAC,SAAS,UACd,yOAGf,gCACU,+DAEV,6BACS,gCACa,sBAChB,qCACY,cACD,cACA,+BAAW,sCACK,iCACT,mCACD,0HAEjB,kBAAK,qCAAoC,8LAI/C,gCACU;IAS1B;;;;;EACF","file":"dashboard.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["dashboard.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAQmC;IAAiB;;;;;;EACpD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAI4B;AAClB,mBAAoB,AAAY,0BAAT,OAAO;AACpC,YAAO,qCACE,iCACC,kEACiB,SAAc,SAAc,uBAChC,sBACb,uCACW,gCACe,sCAAU,YAAsB,aAAZ,AAAO,MAAD,UAAO,gBAC9C,sCACC,kBAAW,qFACN;4JAET,qDACc,uBAAW,cACxB,kBAAK,wIAEG,kCACD,iBACN,eACF,qBACO,2DACc,wDACF,uCAAuB,aAAZ,AAAO,MAAD,UAAO,aAAa,eACvD,kBACL,4BACO,AAAU,oCACL,kBACa,+OAO7B,oCACG,AAAO,MAAD,eACN,yBACA,iEACI,uDACF,0CACkC,yCACrB,sBAChB,6BACkB,2CACH,mEACG,iBACD,iBACE,SAAC,SAAS,UACd,yOAGf,gCACU,+DAEV,6BACS,gCACa,sBAChB,qCACY,cACD,cACA,+BAAW,sCACK,iCACT,mCACD,0HAEjB,kBAAK,qCAAoC,8LAI/C,gCACU;IAS1B;;;;;EACF","file":"dashboard.ddc.js"}');
   // Exports:
   return {
     ui_2__dashboard: dashboard

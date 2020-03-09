@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pda_portal/theme.dart';
 import 'package:line_awesome_icons/line_awesome_icons.dart';
@@ -11,22 +12,26 @@ class _TestCardState extends State<TestCard> {
   bool _expanded= false;
   @override
   Widget build(BuildContext context) {
+    final _media= MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.only(bottom: 3),
       child: Column(
         children: <Widget>[
           Container(
-            width: wWidth(800),
+            width: _media.width*0.8,
             child: Card(
               color: Colors.transparent,
               elevation: 5.0,
               margin: EdgeInsets.only(right: 10,left: 10,top: 10),
               child: Container(
-                decoration: BoxDecoration(color: card),
+                decoration: BoxDecoration(
+                    color: card,
+                  borderRadius: BorderRadius.all(Radius.circular(5))
+                ),
                 child: Material(
                   color: Colors.transparent,
                   child: InkWell(
-                    hoverColor: Colors.yellowAccent,
+                    borderRadius: BorderRadius.circular(5),
                     child: ListTile(
                       onTap: (){
                         setState(() {
@@ -69,7 +74,7 @@ class _TestCardState extends State<TestCard> {
             ),
           ),
           AnimatedContainer(
-            width: wWidth(750),
+            width: _media.width*0.75,
             decoration: BoxDecoration(
               color: Colors.grey.shade50,
               border: Border(
@@ -108,131 +113,131 @@ class _StatusInfoState extends State<StatusInfo> {
 
 
 //FIRST DESIGN FOR THE CARDS BELOW. DO NOT USE BECAUSE IT'S UGLY, K THX.
-
-class reqCard extends StatefulWidget {
-  @override
-  _reqCardState createState() => _reqCardState();
-}
-
-class _reqCardState extends State<reqCard> {
-  bool _expanded= false;
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Padding(
-        padding: const EdgeInsets.only(bottom:8.0),
-        child: Container(
-          width: wWidth(750),
-          child: Column(
-            children: <Widget>[
-              Material(
-                color: Colors.transparent,
-                elevation: 5,
-                child: Container(
-                  height: wHeight(100),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(7.5),
-                        topRight: Radius.circular(7.5)
-                    ),
-                    color: Colors.white,
-                  ),
-                  child: Row(
-                    children: <Widget>[
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          Container(
-                            height: wHeight(50),
-                            width: wWidth(50),
-                            decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Colors.blue
-                            ),
-                            child: Icon(Icons.announcement, color: Colors.white, size: wSize(25, 15),),
-                          ),
-                          SizedBox(
-                            height: 5,
-                          ),
-                          Text('ACTION\nREQUIRED',
-                            style: TextStyle(
-                                fontWeight: FontWeight.w400,
-                                fontSize: 10
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Opacity(
-                opacity: 1,
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 5,right: 5),
-                  child: AnimatedContainer(
-                    decoration: BoxDecoration(
-                      color: Colors.grey.shade50,
-                      border: Border(
-                        left: BorderSide(width: 1, color: Colors.white),
-                        right: BorderSide(width: 1, color: Colors.white),
-                      ),
-                    ),
-                    duration: Duration(milliseconds: 200),
-                    height: _expanded?150:0,
-                  ),
-                ),
-              ),
-              Container(
-                height: 30,
-                decoration: BoxDecoration(
-                    boxShadow: [
-
-                    ],
-                    borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(7.5),
-                        bottomRight: Radius.circular(7.5)
-                    ),
-                    border: Border.all(width: 0.5, color: Colors.white)
-                ),
-                child: Material(
-                  elevation: 5,
-                  color: Colors.transparent,
-                  child: InkWell(
-                    borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(7.5),
-                      bottomRight: Radius.circular(7.5),
-                    ),
-                    onTap: (){
-                      setState((){
-                        _expanded?_expanded=false:_expanded=true;
-                      });
-                    },
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Text('STATUS',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 12
-                          ),
-                        ),
-                        _expanded?Icon(Icons.arrow_drop_up,color: Colors.white, size: 12,):Icon(Icons.arrow_drop_down,color: Colors.white, size: 12,),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(height:10,)
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
+//
+//class reqCard extends StatefulWidget {
+//  @override
+//  _reqCardState createState() => _reqCardState();
+//}
+//
+//class _reqCardState extends State<reqCard> {
+//  bool _expanded= false;
+//  @override
+//  Widget build(BuildContext context) {
+//    return Center(
+//      child: Padding(
+//        padding: const EdgeInsets.only(bottom:8.0),
+//        child: Container(
+//          width: wWidth(750),
+//          child: Column(
+//            children: <Widget>[
+//              Material(
+//                color: Colors.transparent,
+//                elevation: 5,
+//                child: Container(
+//                  height: wHeight(100),
+//                  decoration: BoxDecoration(
+//                    borderRadius: BorderRadius.only(
+//                        topLeft: Radius.circular(7.5),
+//                        topRight: Radius.circular(7.5)
+//                    ),
+//                    color: Colors.white,
+//                  ),
+//                  child: Row(
+//                    children: <Widget>[
+//                      SizedBox(
+//                        width: 10,
+//                      ),
+//                      Column(
+//                        mainAxisAlignment: MainAxisAlignment.center,
+//                        children: <Widget>[
+//                          Container(
+//                            height: wHeight(50),
+//                            width: wWidth(50),
+//                            decoration: BoxDecoration(
+//                                shape: BoxShape.circle,
+//                                color: Colors.blue
+//                            ),
+//                            child: Icon(Icons.announcement, color: Colors.white, size: wSize(25, 15),),
+//                          ),
+//                          SizedBox(
+//                            height: 5,
+//                          ),
+//                          Text('ACTION\nREQUIRED',
+//                            style: TextStyle(
+//                                fontWeight: FontWeight.w400,
+//                                fontSize: 10
+//                            ),
+//                            textAlign: TextAlign.center,
+//                          ),
+//                        ],
+//                      ),
+//                    ],
+//                  ),
+//                ),
+//              ),
+//              Opacity(
+//                opacity: 1,
+//                child: Padding(
+//                  padding: const EdgeInsets.only(left: 5,right: 5),
+//                  child: AnimatedContainer(
+//                    decoration: BoxDecoration(
+//                      color: Colors.grey.shade50,
+//                      border: Border(
+//                        left: BorderSide(width: 1, color: Colors.white),
+//                        right: BorderSide(width: 1, color: Colors.white),
+//                      ),
+//                    ),
+//                    duration: Duration(milliseconds: 200),
+//                    height: _expanded?150:0,
+//                  ),
+//                ),
+//              ),
+//              Container(
+//                height: 30,
+//                decoration: BoxDecoration(
+//                    boxShadow: [
+//
+//                    ],
+//                    borderRadius: BorderRadius.only(
+//                        bottomLeft: Radius.circular(7.5),
+//                        bottomRight: Radius.circular(7.5)
+//                    ),
+//                    border: Border.all(width: 0.5, color: Colors.white)
+//                ),
+//                child: Material(
+//                  elevation: 5,
+//                  color: Colors.transparent,
+//                  child: InkWell(
+//                    borderRadius: BorderRadius.only(
+//                      bottomLeft: Radius.circular(7.5),
+//                      bottomRight: Radius.circular(7.5),
+//                    ),
+//                    onTap: (){
+//                      setState((){
+//                        _expanded?_expanded=false:_expanded=true;
+//                      });
+//                    },
+//                    child: Row(
+//                      mainAxisAlignment: MainAxisAlignment.center,
+//                      children: <Widget>[
+//                        Text('STATUS',
+//                          style: TextStyle(
+//                              color: Colors.white,
+//                              fontWeight: FontWeight.bold,
+//                              fontSize: 12
+//                          ),
+//                        ),
+//                        _expanded?Icon(Icons.arrow_drop_up,color: Colors.white, size: 12,):Icon(Icons.arrow_drop_down,color: Colors.white, size: 12,),
+//                      ],
+//                    ),
+//                  ),
+//                ),
+//              ),
+//              SizedBox(height:10,)
+//            ],
+//          ),
+//        ),
+//      ),
+//    );
+//  }
+//}

@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:pda_portal/theme.dart';
 import 'statusCard.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:line_awesome_icons/line_awesome_icons.dart';
-import 'package:draggable_scrollbar/draggable_scrollbar.dart';
 import 'package:flare_flutter/flare_actor.dart';
 
-class Dashboard extends StatefulWidget {
+class Dashboard extends StatefulWidget{
   @override
   _DashboardState createState() => _DashboardState();
 }
 
-class _DashboardState extends State<Dashboard> {
+class _DashboardState extends State<Dashboard> with TickerProviderStateMixin{
   @override
   Widget build(BuildContext context) {
     final _media = MediaQuery.of(context).size;
@@ -61,7 +59,7 @@ class _DashboardState extends State<Dashboard> {
                     child: ListView.builder(
                         physics: NeverScrollableScrollPhysics(),
                         shrinkWrap: true,
-                        itemCount: 5,
+                        itemCount: 15,
                         itemBuilder: (context, index) {
                           return TestCard();
                         }),

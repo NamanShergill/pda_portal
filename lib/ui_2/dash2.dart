@@ -3,7 +3,6 @@ import 'package:line_awesome_icons/line_awesome_icons.dart';
 import 'package:bubble_bottom_bar/bubble_bottom_bar.dart';
 import 'package:pda_portal/theme.dart';
 import 'dashboard.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
 class Dash2 extends StatefulWidget {
@@ -38,7 +37,6 @@ class _Dash2State extends State<Dash2> {
   @override
   Widget build(BuildContext context) {
     //MediaQuery doesn't work properly for browsers, so I am using a package for layout scaling.
-    ScreenUtil.init(context, width: 1000, height: 1000, allowFontScaling: true);
     return SafeArea(
       top: true,
       child: Scaffold(

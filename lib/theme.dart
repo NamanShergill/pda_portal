@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 Color background = Color(0xff222629);
 Color card=Color(0xff474b4f);
@@ -14,18 +13,3 @@ Color accent= Color(0xff86c232);
 //Color card=Color(0xff404b60);
 
 TextStyle textWhite= TextStyle(color: Colors.white);
-
-double wSize(double value, value2){
-  double x=ScreenUtil().setSp(value)>value2?value2:ScreenUtil().setSp(value);
-  return x;
-}
-
-double wHeight(double value){
-  double x=ScreenUtil().setHeight(value);
-  return x;
-}
-
-double wWidth(double value){
-  double x=ScreenUtil().setWidth(value);
-  return x;
-}
