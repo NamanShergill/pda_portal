@@ -1,1 +1,0 @@
-{"isEntrypoint":true,"deps":["flutter|lib/material.dart","line_awesome_icons|lib/line_awesome_icons.dart","bubble_bottom_bar|lib/bubble_bottom_bar.dart","pda_portal|lib/theme.dart","pda_portal|lib/ui_2/dashboard.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

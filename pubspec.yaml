@@ -19,7 +19,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  bubble_bottom_bar: ^1.2.0
   animations: ^1.0.0+5
   line_awesome_icons: ^1.0.4+2
   flare_flutter:

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pda_portal/ui_2/dash2.dart';
+import 'package:pda_portal/ui_2/dashboard.dart';
 
 
 void main() => runApp(MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Josefin'
       ),
-      home: Dash2(),
+      home: Dashboard(),
     );
   }
 }

@@ -53,7 +53,6 @@ var baseUrl = (function () {
 
 let modulePaths = {
  "dart_sdk": "packages/build_web_compilers/src/dev_compiler/dart_sdk",
- "packages/bubble_bottom_bar/bubble_bottom_bar": "packages/bubble_bottom_bar/bubble_bottom_bar.ddc",
  "packages/collection/collection": "packages/collection/collection.ddc",
  "packages/collection/src/algorithms": "packages/collection/src/algorithms.ddc",
  "packages/collection/src/canonicalized_map": "packages/collection/src/canonicalized_map.ddc",
@@ -109,7 +108,6 @@ let modulePaths = {
  "packages/pda_portal/main": "packages/pda_portal/main.ddc",
  "packages/pda_portal/main_web_entrypoint": "packages/pda_portal/main_web_entrypoint.ddc",
  "packages/pda_portal/theme": "packages/pda_portal/theme.ddc",
- "packages/pda_portal/ui_2/dash2": "packages/pda_portal/ui_2/dash2.ddc",
  "packages/pda_portal/ui_2/dashboard": "packages/pda_portal/ui_2/dashboard.ddc",
  "packages/pda_portal/ui_2/statusCard": "packages/pda_portal/ui_2/statusCard.ddc",
  "packages/typed_data/typed_buffers": "packages/typed_data/typed_buffers.ddc",

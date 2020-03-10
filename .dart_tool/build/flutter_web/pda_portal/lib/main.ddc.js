@@ -1,11 +1,11 @@
-define(['dart_sdk', 'packages/flutter/material', 'packages/pda_portal/ui_2/dash2', 'packages/flutter/src/widgets/actions'], function(dart_sdk, packages__flutter__material, packages__pda_portal__ui_2__dash2, packages__flutter__src__widgets__actions) {
+define(['dart_sdk', 'packages/flutter/material', 'packages/pda_portal/ui_2/dashboard', 'packages/flutter/src/widgets/actions'], function(dart_sdk, packages__flutter__material, packages__pda_portal__ui_2__dashboard, packages__flutter__src__widgets__actions) {
   'use strict';
   const core = dart_sdk.core;
   const dart = dart_sdk.dart;
   const dartx = dart_sdk.dartx;
   const app = packages__flutter__material.src__material__app;
   const theme_data = packages__flutter__material.src__material__theme_data;
-  const dash2 = packages__pda_portal__ui_2__dash2.ui_2__dash2;
+  const dashboard = packages__pda_portal__ui_2__dashboard.ui_2__dashboard;
   const widget_inspector = packages__flutter__src__widgets__actions.src__widgets__widget_inspector;
   const framework = packages__flutter__src__widgets__actions.src__widgets__framework;
   const binding = packages__flutter__src__widgets__actions.src__widgets__binding;
@@ -93,7 +93,7 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/pda_portal/ui_2/dash2
   var C2;
   main.MyApp = class MyApp extends framework.StatelessWidget {
     build(context) {
-      return new app.MaterialApp.new({debugShowCheckedModeBanner: false, theme: theme_data.ThemeData.new({fontFamily: "Josefin"}), home: new dash2.Dash2.new({$creationLocationd_0dea112b090073317d4: C0 || CT.C0}), $creationLocationd_0dea112b090073317d4: C2 || CT.C2});
+      return new app.MaterialApp.new({debugShowCheckedModeBanner: false, theme: theme_data.ThemeData.new({fontFamily: "Josefin"}), home: new dashboard.Dashboard.new({$creationLocationd_0dea112b090073317d4: C0 || CT.C0}), $creationLocationd_0dea112b090073317d4: C2 || CT.C2});
     }
   };
   (main.MyApp.new = function(opts) {

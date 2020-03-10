@@ -1,1 +1,1 @@
-{"isEntrypoint":true,"deps":["flutter|lib/material.dart","pda_portal|lib/ui_2/dash2.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":true}
+{"isEntrypoint":true,"deps":["flutter|lib/material.dart","pda_portal|lib/ui_2/dashboard.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":true}

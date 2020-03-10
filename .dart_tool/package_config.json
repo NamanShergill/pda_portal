@@ -32,12 +32,6 @@
       "languageVersion": "2.0"
     },
     {
-      "name": "bubble_bottom_bar",
-      "rootUri": "file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/bubble_bottom_bar-1.2.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
       "name": "charcode",
       "rootUri": "file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/charcode-1.1.2",
       "packageUri": "lib/",
@@ -206,7 +200,7 @@
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2020-03-09T09:51:28.931496Z",
+  "generated": "2020-03-09T19:54:33.561551Z",
   "generator": "pub",
   "generatorVersion": "2.8.0-dev.8.0.flutter-514a8d4c84"
 }
