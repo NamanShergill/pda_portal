@@ -1,4 +1,11 @@
-file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/bubble_bottom_bar-1.2.0/lib/bubble_bottom_bar.dart
+file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/animated_text_kit-2.0.0/lib/animated_text_kit.dart
+file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/animated_text_kit-2.0.0/lib/src/colorize.dart
+file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/animated_text_kit-2.0.0/lib/src/fade.dart
+file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/animated_text_kit-2.0.0/lib/src/rotate.dart
+file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/animated_text_kit-2.0.0/lib/src/scale.dart
+file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/animated_text_kit-2.0.0/lib/src/text_liquid_fill.dart
+file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/animated_text_kit-2.0.0/lib/src/typer.dart
+file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/animated_text_kit-2.0.0/lib/src/typewriter.dart
 file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/collection.dart
 file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/algorithms.dart
 file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.14.11/lib/src/canonicalized_map.dart
@@ -91,7 +98,6 @@ file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/flare_flutter-
 file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/flare_flutter-2.0.1/lib/flare_render_box.dart
 file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/flare_flutter-2.0.1/lib/provider/asset_flare.dart
 file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/flare_flutter-2.0.1/lib/trim_path.dart
-file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_screenutil-1.0.2/lib/flutter_screenutil.dart
 file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/line_awesome_icons-1.0.4+2/lib/line_awesome_icons.dart
 file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.1.8/lib/meta.dart
 file:///C:/Users/Naman/flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.1.6/lib/typed_buffers.dart
@@ -703,6 +709,6 @@ file:///D:/Programming/Flutter/pda_portal/.dart_tool/flutter_build/51d98d1fd8595
 file:///D:/Programming/Flutter/pda_portal/.packages
 file:///D:/Programming/Flutter/pda_portal/lib/main.dart
 file:///D:/Programming/Flutter/pda_portal/lib/theme.dart
-file:///D:/Programming/Flutter/pda_portal/lib/ui_2/dash2.dart
 file:///D:/Programming/Flutter/pda_portal/lib/ui_2/dashboard.dart
 file:///D:/Programming/Flutter/pda_portal/lib/ui_2/statusCard.dart
+file:///D:/Programming/Flutter/pda_portal/lib/widgets/bottomnav.dart

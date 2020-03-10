@@ -1,8 +1,13 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pda_portal/theme.dart';
 import 'statusCard.dart';
 import 'package:line_awesome_icons/line_awesome_icons.dart';
 import 'package:flare_flutter/flare_actor.dart';
+import 'package:pda_portal/widgets/bottomnav.dart';
+
+
+var pageTitle = ValueNotifier(0);
 
 class Dashboard extends StatefulWidget {
   @override
@@ -68,12 +73,69 @@ class _DashboardState extends State<Dashboard>{
                   collapseMode: CollapseMode.parallax,
                   titlePadding:
                       EdgeInsets.only(left: _media.width * 0.1, bottom: 15),
-                  title: Text(
-                    'Pending Requests',
-                    style: textWhite.copyWith(
-                      fontSize: 35,
-                      fontWeight: FontWeight.w300,
-                    ),
+                  title: ValueListenableBuilder(
+                    valueListenable: pageTitle,
+                    builder: (context, value, child){
+                      return Stack(
+                        children: <Widget>[
+                          AnimatedOpacity(
+                            opacity: value==0?1:0,
+                            duration: durVal,
+                            child: Text(
+                              'All Requests',
+                              style: textWhite.copyWith(
+                                fontSize: 35,
+                                fontWeight: FontWeight.w300,
+                              ),
+                            ),
+                          ),
+                          AnimatedOpacity(
+                            opacity: value==1?1:0,
+                            duration: durVal,
+                            child: Text(
+                              'Urgent Requests',
+                              style: textWhite.copyWith(
+                                fontSize: 35,
+                                fontWeight: FontWeight.w300,
+                              ),
+                            ),
+                          ),
+                          AnimatedOpacity(
+                            opacity: value==2?1:0,
+                            duration: durVal,
+                            child: Text(
+                              'Pending Requests',
+                              style: textWhite.copyWith(
+                                fontSize: 35,
+                                fontWeight: FontWeight.w300,
+                              ),
+                            ),
+                          ),
+                          AnimatedOpacity(
+                            opacity: value==3?1:0,
+                            duration: durVal,
+                            child: Text(
+                              'Approved Requests',
+                              style: textWhite.copyWith(
+                                fontSize: 35,
+                                fontWeight: FontWeight.w300,
+                              ),
+                            ),
+                          ),
+                          AnimatedOpacity(
+                            opacity: value==4?1:0,
+                            duration: durVal,
+                            child: Text(
+                              'Rejected Requests',
+                              style: textWhite.copyWith(
+                                fontSize: 35,
+                                fontWeight: FontWeight.w300,
+                              ),
+                            ),
+                          ),
+                        ],
+                      );
+                    },
                   ),
                 ),
               ),
@@ -126,6 +188,21 @@ class _DashboardState extends State<Dashboard>{
             ),
           ),
         ),
+        floatingActionButton: FloatingActionButton.extended(
+          tooltip: "Submit a new request",
+            onPressed: (){},
+            backgroundColor: accent,
+            label: Row(
+              children: <Widget>[
+                Icon(Icons.add, color: Colors.white, size: 13,),
+                Padding(
+                  padding: const EdgeInsets.only(top: 3),
+                  child: Text('NEW', style: TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.w500),),
+                ),
+              ],
+            )
+        ),
+        bottomNavigationBar: BottomNavCustom(),
       ),
     );
   }
