@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 
-Color background = Color(0xff222629);
+Color backgroundDark = Color(0xff181818);
+Color background = Color(0xff212121);
 Color card=Color(0xff474b4f);
 Color accent= Color(0xff86c232);
+
+Duration durVal= Duration(milliseconds: 300);
 
 //Bluish color palette below.
 

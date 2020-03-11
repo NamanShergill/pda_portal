@@ -9,8 +9,12 @@ define(['dart_sdk', 'packages/flutter/src/painting/_network_image_web', 'package
   var theme = Object.create(dart.library);
   const CT = Object.create(null);
   dart.defineLazy(theme, {
+    /*theme.backgroundDark*/get backgroundDark() {
+      return new ui.Color.new(4279769112);
+    },
+    set backgroundDark(_) {},
     /*theme.background*/get background() {
-      return new ui.Color.new(4280428073);
+      return new ui.Color.new(4280361249);
     },
     set background(_) {},
     /*theme.card*/get card() {
@@ -21,6 +25,10 @@ define(['dart_sdk', 'packages/flutter/src/painting/_network_image_web', 'package
       return new ui.Color.new(4287021618);
     },
     set accent(_) {},
+    /*theme.durVal*/get durVal() {
+      return new core.Duration.new({milliseconds: 300});
+    },
+    set durVal(_) {},
     /*theme.textWhite*/get textWhite() {
       return new text_style.TextStyle.new({color: colors.Colors.white});
     },
@@ -29,7 +37,7 @@ define(['dart_sdk', 'packages/flutter/src/painting/_network_image_web', 'package
   dart.trackLibraries("packages/pda_portal/theme", {
     "package:pda_portal/theme.dart": theme
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["theme.dart"],"names":[],"mappings":";;;;;;;;;;;MAEM,gBAAU;YAAG,kBAAM;;;MACnB,UAAI;YAAC,kBAAM;;;MACX,YAAM;YAAE,kBAAM;;;MAUV,eAAS;YAAE,sCAAwB","file":"theme.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["theme.dart"],"names":[],"mappings":";;;;;;;;;;;MAEM,oBAAc;YAAG,kBAAM;;;MACvB,gBAAU;YAAG,kBAAM;;;MACnB,UAAI;YAAC,kBAAM;;;MACX,YAAM;YAAE,kBAAM;;;MAEX,YAAM;YAAE,sCAAuB;;;MAU9B,eAAS;YAAE,sCAAwB","file":"theme.ddc.js"}');
   // Exports:
   return {
     theme: theme
