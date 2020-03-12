@@ -14,15 +14,16 @@ class _TestCardState extends State<TestCard> {
   Widget build(BuildContext context) {
     final _media= MediaQuery.of(context).size;
     return Padding(
-      padding: const EdgeInsets.only(bottom: 3),
+      padding: const EdgeInsets.only(bottom: 3, left:8, right:8),
       child: Column(
         children: <Widget>[
-          Container(
+          AnimatedContainer(
+            duration: Duration(milliseconds: 200),
             width: _media.width*0.8,
             child: Card(
               color: Colors.transparent,
               elevation: 5.0,
-              margin: EdgeInsets.only(right: 10,left: 10,top: 10),
+              margin: EdgeInsets.only(top: 15),
               child: Container(
                 decoration: BoxDecoration(
                     color: card,
@@ -38,33 +39,33 @@ class _TestCardState extends State<TestCard> {
                           _expanded?_expanded=false:_expanded=true;
                         });
                       },
-                        contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
-                        leading: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            Container(
-                              padding: EdgeInsets.only(right: 12.0),
-                              decoration: BoxDecoration(
-                                  border: Border(
-                                      right: BorderSide(width: 1.0, color: Colors.white24))),
-                              child: Icon(LineAwesomeIcons.exclamation_circle, color: Colors.white),
-                            ),
-                          ],
-                        ),
+                      contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+                      leading: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Container(
+                            padding: EdgeInsets.only(right: 12.0),
+                            decoration: BoxDecoration(
+                                border: Border(
+                                    right: BorderSide(width: 1.0, color: Colors.white24))),
+                            child: Icon(LineAwesomeIcons.exclamation_circle, color: Colors.yellowAccent),
+                          ),
+                        ],
+                      ),
                       dense: true,
                       isThreeLine: false,
-                        title: Text(
-                          "Placeholder Text",
-                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-                        ),
-                        subtitle: Row(
-                          children: <Widget>[
-                            Icon(Icons.linear_scale, color: Colors.yellowAccent),
-                            Text("Pending", style: TextStyle(color: Colors.white))
-                          ],
-                        ),
-                        trailing:
-                        _expanded
+                      title: Text(
+                        "SSIC 2019",
+                        style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                      ),
+                      subtitle: Row(
+                        children: <Widget>[
+                          Icon(Icons.linear_scale, color: Colors.yellowAccent),
+                          Text("Pending", style: TextStyle(color: Colors.white))
+                        ],
+                      ),
+                      trailing:
+                      _expanded
                           ?Icon(Icons.keyboard_arrow_up, color: Colors.white, size: 30.0)
                           :Icon(Icons.keyboard_arrow_down, color: Colors.white, size: 30.0),
                     ),
@@ -73,17 +74,43 @@ class _TestCardState extends State<TestCard> {
               ),
             ),
           ),
-          AnimatedContainer(
-            width: _media.width*0.75,
-            decoration: BoxDecoration(
-              color: Colors.grey.shade50,
-              border: Border(
+          Material(
+            color: Colors.transparent,
+            elevation: 2,
+            child: AnimatedContainer(
+              width: _media.width*0.78,
+              decoration: BoxDecoration(
+                color: Colors.grey.shade50,
               ),
-              borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5),bottomRight: Radius.circular(5)),
+              duration: Duration(milliseconds: 170),
+              height: _expanded?200:0,
+              child: StatusInfo(),
             ),
-            duration: Duration(milliseconds: 170),
-            height: _expanded?150:0,
-            child: StatusInfo(),
+          ),
+          Material(
+            borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5), bottomRight: Radius.circular(5)),
+            color: card,
+            child: InkWell(
+              borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5), bottomRight: Radius.circular(5)),
+              onTap: (){},
+              child: AnimatedContainer(
+                duration: Duration(milliseconds: 100),
+                height: _expanded?35:0,
+                width: _media.width*0.78,
+                child: Align(
+                    alignment: Alignment.center,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Padding(
+                          padding: const EdgeInsets.only(top: 2),
+                          child: Text('More Information', style: textWhite.copyWith(fontWeight: FontWeight.w400, fontSize: 15),),
+                        ),
+                        Icon(Icons.arrow_right, color: Colors.white,)
+                      ],
+                    )),
+              ),
+            ),
           ),
         ],
       ),

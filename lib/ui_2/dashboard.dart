@@ -72,7 +72,7 @@ class _DashboardState extends State<Dashboard>{
                 flexibleSpace: FlexibleSpaceBar(
                   collapseMode: CollapseMode.parallax,
                   titlePadding:
-                      EdgeInsets.only(left: _media.width * 0.1, bottom: 15),
+                      EdgeInsets.only(left: _media.width * 0.09, bottom: 15),
                   title: ValueListenableBuilder(
                     valueListenable: pageTitle,
                     builder: (context, value, child){
@@ -153,7 +153,7 @@ class _DashboardState extends State<Dashboard>{
                     child: ListView.builder(
                         physics: NeverScrollableScrollPhysics(),
                         shrinkWrap: true,
-                        itemCount: 15,
+                        itemCount: 8,
                         itemBuilder: (context, index) {
                           return TestCard();
                         }),
