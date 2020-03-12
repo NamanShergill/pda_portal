@@ -1,10 +1,11 @@
-define(['dart_sdk', 'packages/flutter/material', 'packages/pda_portal/ui_2/dashboard', 'packages/flutter/src/widgets/actions'], function(dart_sdk, packages__flutter__material, packages__pda_portal__ui_2__dashboard, packages__flutter__src__widgets__actions) {
+define(['dart_sdk', 'packages/flutter/material', 'packages/pda_portal/theme', 'packages/pda_portal/ui_2/dashboard', 'packages/flutter/src/widgets/actions'], function(dart_sdk, packages__flutter__material, packages__pda_portal__theme, packages__pda_portal__ui_2__dashboard, packages__flutter__src__widgets__actions) {
   'use strict';
   const core = dart_sdk.core;
   const dart = dart_sdk.dart;
   const dartx = dart_sdk.dartx;
   const app = packages__flutter__material.src__material__app;
   const theme_data = packages__flutter__material.src__material__theme_data;
+  const theme = packages__pda_portal__theme.theme;
   const dashboard = packages__pda_portal__ui_2__dashboard.ui_2__dashboard;
   const widget_inspector = packages__flutter__src__widgets__actions.src__widgets__widget_inspector;
   const framework = packages__flutter__src__widgets__actions.src__widgets__framework;
@@ -21,7 +22,7 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/pda_portal/ui_2/dashb
         [_Location_parameterLocations]: C1 || CT.C1,
         [_Location_name]: null,
         [_Location_column]: 13,
-        [_Location_line]: 15,
+        [_Location_line]: 16,
         [_Location_file]: "org-dartlang-app:///packages/pda_portal/main.dart"
       });
     },
@@ -51,7 +52,7 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/pda_portal/ui_2/dashb
         [_Location_parameterLocations]: null,
         [_Location_name]: "home",
         [_Location_column]: 7,
-        [_Location_line]: 15,
+        [_Location_line]: 16,
         [_Location_file]: null
       });
     },
@@ -93,7 +94,7 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/pda_portal/ui_2/dashb
   var C2;
   main.MyApp = class MyApp extends framework.StatelessWidget {
     build(context) {
-      return new app.MaterialApp.new({debugShowCheckedModeBanner: false, theme: theme_data.ThemeData.new({fontFamily: "Josefin"}), home: new dashboard.Dashboard.new({$creationLocationd_0dea112b090073317d4: C0 || CT.C0}), $creationLocationd_0dea112b090073317d4: C2 || CT.C2});
+      return new app.MaterialApp.new({debugShowCheckedModeBanner: false, theme: theme_data.ThemeData.new({accentColor: theme.accent, fontFamily: "Josefin"}), home: new dashboard.Dashboard.new({$creationLocationd_0dea112b090073317d4: C0 || CT.C0}), $creationLocationd_0dea112b090073317d4: C2 || CT.C2});
     }
   };
   (main.MyApp.new = function(opts) {
@@ -114,7 +115,7 @@ define(['dart_sdk', 'packages/flutter/material', 'packages/pda_portal/ui_2/dashb
   dart.trackLibraries("packages/pda_portal/main", {
     "package:pda_portal/main.dart": main
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["main.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAQ4B;AACxB,YAAO,sDACuB,cACrB,sCACO,mBAER;IAEV;;;;;;EACF;;;;;;;;;AAbe,0BAAO;EAAQ","file":"main.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["main.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAQ4B;AACxB,YAAO,sDACuB,cACrB,uCACQ,0BACD,mBAER;IAEV;;;;;;EACF;;;;;;;;;AAde,0BAAO;EAAQ","file":"main.ddc.js"}');
   // Exports:
   return {
     main: main
