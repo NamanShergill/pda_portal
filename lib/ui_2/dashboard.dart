@@ -149,6 +149,9 @@ class _DashboardState extends State<Dashboard>{
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
+                  SizedBox(
+                    height: 10,
+                  ),
                   Center(
                     child: ListView.builder(
                         physics: NeverScrollableScrollPhysics(),

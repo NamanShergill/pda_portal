@@ -110,6 +110,7 @@ let modulePaths = {
  "packages/pda_portal/theme": "packages/pda_portal/theme.ddc",
  "packages/pda_portal/ui_2/dashboard": "packages/pda_portal/ui_2/dashboard.ddc",
  "packages/pda_portal/ui_2/statusCard": "packages/pda_portal/ui_2/statusCard.ddc",
+ "packages/pda_portal/widgets/ModifiedExistingWidgets/custom_expansion_tile": "packages/pda_portal/widgets/ModifiedExistingWidgets/custom_expansion_tile.ddc",
  "packages/typed_data/typed_buffers": "packages/typed_data/typed_buffers.ddc",
  "packages/vector_math/hash": "packages/vector_math/hash.ddc",
  "packages/vector_math/vector_math_64": "packages/vector_math/vector_math_64.ddc"

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pda_portal/theme.dart';
 import 'package:line_awesome_icons/line_awesome_icons.dart';
+import 'package:pda_portal/widgets/ModifiedExistingWidgets/custom_expansion_tile.dart' as customExT;
 
 class TestCard extends StatefulWidget {
   @override
@@ -9,106 +10,88 @@ class TestCard extends StatefulWidget {
 }
 
 class _TestCardState extends State<TestCard> {
-  bool _expanded= false;
   @override
   Widget build(BuildContext context) {
     final _media= MediaQuery.of(context).size;
     return Padding(
-      padding: const EdgeInsets.only(bottom: 3, left:8, right:8),
+      padding: const EdgeInsets.only(bottom: 20, left:8, right:8),
       child: Column(
         children: <Widget>[
           AnimatedContainer(
             duration: Duration(milliseconds: 200),
             width: _media.width*0.8,
-            child: Card(
+            child: Material(
               color: Colors.transparent,
               elevation: 5.0,
-              margin: EdgeInsets.only(top: 15),
-              child: Container(
-                decoration: BoxDecoration(
-                    color: card,
-                  borderRadius: BorderRadius.all(Radius.circular(5))
+              child: customExT.ExpansionTile(
+                headerBackgroundColor: card,
+                backgroundColor: Colors.transparent,
+                leading: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Container(
+                      padding: EdgeInsets.only(right: 12.0),
+                      decoration: BoxDecoration(
+                          border: Border(
+                              right: BorderSide(width: 1.0, color: Colors.white24))),
+                      child: Icon(LineAwesomeIcons.exclamation_circle, color: Colors.yellowAccent),
+                    ),
+                  ],
                 ),
-                child: Material(
-                  color: Colors.transparent,
-                  child: InkWell(
-                    borderRadius: BorderRadius.circular(5),
-                    child: ListTile(
-                      onTap: (){
-                        setState(() {
-                          _expanded?_expanded=false:_expanded=true;
-                        });
-                      },
-                      contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
-                      leading: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          Container(
-                            padding: EdgeInsets.only(right: 12.0),
-                            decoration: BoxDecoration(
-                                border: Border(
-                                    right: BorderSide(width: 1.0, color: Colors.white24))),
-                            child: Icon(LineAwesomeIcons.exclamation_circle, color: Colors.yellowAccent),
-                          ),
-                        ],
+                title: Text(
+                  "Second International Conference on Smart IoT Systems - Innovations in Computing (SSIC-2019) ",
+                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                ),
+                subtitle: Row(
+                  children: <Widget>[
+                    Icon(Icons.linear_scale, color: Colors.yellowAccent),
+                    Text("Pending", style: TextStyle(color: Colors.white))
+                  ],
+                ),
+                children: <Widget>[
+                  Material(
+                    color: Colors.transparent,
+                    elevation: 1000,
+                    child: AnimatedContainer(
+                      width: _media.width*0.78,
+                      decoration: BoxDecoration(
+                        color: Colors.grey.shade50,
                       ),
-                      dense: true,
-                      isThreeLine: false,
-                      title: Text(
-                        "SSIC 2019",
-                        style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-                      ),
-                      subtitle: Row(
-                        children: <Widget>[
-                          Icon(Icons.linear_scale, color: Colors.yellowAccent),
-                          Text("Pending", style: TextStyle(color: Colors.white))
-                        ],
-                      ),
-                      trailing:
-                      _expanded
-                          ?Icon(Icons.keyboard_arrow_up, color: Colors.white, size: 30.0)
-                          :Icon(Icons.keyboard_arrow_down, color: Colors.white, size: 30.0),
+                      duration: Duration(milliseconds: 100),
+                      height: 200,
                     ),
                   ),
-                ),
-              ),
-            ),
-          ),
-          Material(
-            color: Colors.transparent,
-            elevation: 2,
-            child: AnimatedContainer(
-              width: _media.width*0.78,
-              decoration: BoxDecoration(
-                color: Colors.grey.shade50,
-              ),
-              duration: Duration(milliseconds: 170),
-              height: _expanded?200:0,
-              child: StatusInfo(),
-            ),
-          ),
-          Material(
-            borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5), bottomRight: Radius.circular(5)),
-            color: card,
-            child: InkWell(
-              borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5), bottomRight: Radius.circular(5)),
-              onTap: (){},
-              child: AnimatedContainer(
-                duration: Duration(milliseconds: 100),
-                height: _expanded?35:0,
-                width: _media.width*0.78,
-                child: Align(
-                    alignment: Alignment.center,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Padding(
-                          padding: const EdgeInsets.only(top: 2),
-                          child: Text('More Information', style: textWhite.copyWith(fontWeight: FontWeight.w400, fontSize: 15),),
+                  Material(
+                    color: Colors.transparent,
+                    elevation: 1000,
+                    child: AnimatedContainer(
+                      duration: Duration(milliseconds: 100),
+                      width: _media.width*0.78,
+                      height: 35,
+                      child: Material(
+                        color: card,
+                        elevation: 2,
+                        borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5), bottomRight: Radius.circular(5)),
+                        child: InkWell(
+                          borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5), bottomRight: Radius.circular(5)),
+                          onTap: (){},
+                          child: Align(
+                              alignment: Alignment.center,
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: <Widget>[
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 2),
+                                    child: Text('More Information', style: textWhite.copyWith(fontWeight: FontWeight.w400, fontSize: 15),),
+                                  ),
+                                  Icon(Icons.arrow_right, color: Colors.white,)
+                                ],
+                              )),
                         ),
-                        Icon(Icons.arrow_right, color: Colors.white,)
-                      ],
-                    )),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
           ),
@@ -117,26 +100,6 @@ class _TestCardState extends State<TestCard> {
     );
   }
 }
-
-class StatusInfo extends StatefulWidget {
-  @override
-  _StatusInfoState createState() => _StatusInfoState();
-}
-
-class _StatusInfoState extends State<StatusInfo> {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: <Widget>[
-        ],
-      ),
-    );
-  }
-}
-
-
 
 
 //FIRST DESIGN FOR THE CARDS BELOW. DO NOT USE BECAUSE IT'S UGLY, K THX.
