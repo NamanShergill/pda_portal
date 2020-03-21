@@ -1,1 +1,0 @@
-{"isEntrypoint":true,"deps":["flare_flutter|lib/asset_provider.dart","flare_flutter|lib/cache_asset.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["async"],"hasMain":false}

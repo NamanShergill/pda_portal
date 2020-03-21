@@ -30,6 +30,7 @@ class ExpansionTile extends StatefulWidget {
     this.leading,
     this.headerBackgroundColor,
     @required this.title,
+    this.width,
     this.subtitle,
     this.backgroundColor,
     this.onExpansionChanged,
@@ -39,6 +40,8 @@ class ExpansionTile extends StatefulWidget {
   }) : assert(initiallyExpanded != null),
         super(key: key);
 
+
+  final double width;
   /// A widget to display before the title.
   ///
   /// Typically a [CircleAvatar] widget.
@@ -147,52 +150,59 @@ class _ExpansionTileState extends State<ExpansionTile> with SingleTickerProvider
   Widget _buildChildren(BuildContext context, Widget child) {
     final Color borderSideColor = _borderColor.value ?? Colors.transparent;
 
-    return Container(
-      decoration: BoxDecoration(
-        color: _backgroundColor.value ?? Colors.transparent,
-        border: Border(
-          top: BorderSide(color: borderSideColor),
-          bottom: BorderSide(color: borderSideColor),
+    return Padding(
+      padding: EdgeInsets.only(top: 10, bottom: 10),
+      child: Container(
+        decoration: BoxDecoration(
+          color: _backgroundColor.value ?? Colors.transparent,
+          border: Border(
+            top: BorderSide(color: borderSideColor),
+            bottom: BorderSide(color: borderSideColor),
+          ),
         ),
-      ),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: <Widget>[
-          ListTileTheme.merge(
-            iconColor: _iconColor.value,
-            textColor: _headerColor.value,
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(5)),
-                color:  widget.headerBackgroundColor,
-              ),
-              child: Material(
-                color: Colors.transparent,
-                child: InkWell(
-                  child: Container(
-                    child: ListTile(
-                      contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 15.0),
-                      onTap: _handleTap,
-                      leading: widget.leading,
-                      title: widget.title,
-                      subtitle: widget.subtitle,
-                      trailing: widget.trailing ?? RotationTransition(
-                        turns: _iconTurns,
-                        child: const Icon(Icons.expand_more),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            ListTileTheme.merge(
+              iconColor: _iconColor.value,
+              textColor: _headerColor.value,
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(5)),
+                  color:  widget.headerBackgroundColor,
+                ),
+                child: Material(
+                  borderRadius: BorderRadius.circular(5),
+                  elevation: 5,
+                  color: Colors.transparent,
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(5),
+                    child: Container(
+                      width: widget.width,
+                      child: ListTile(
+                        contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 15.0),
+                        onTap: _handleTap,
+                        leading: widget.leading,
+                        title: widget.title,
+                        subtitle: widget.subtitle,
+                        trailing: widget.trailing ?? RotationTransition(
+                          turns: _iconTurns,
+                          child: const Icon(Icons.expand_more),
+                        ),
                       ),
                     ),
                   ),
                 ),
               ),
             ),
-          ),
-          ClipRect(
-            child: Align(
-              heightFactor: _heightFactor.value,
-              child: child,
+            ClipRect(
+              child: Align(
+                heightFactor: _heightFactor.value,
+                child: child,
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

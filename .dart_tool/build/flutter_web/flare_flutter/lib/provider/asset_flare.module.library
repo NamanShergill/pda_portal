@@ -1,1 +1,0 @@
-{"isEntrypoint":true,"deps":["flutter|lib/material.dart","flutter|lib/services.dart","meta|lib/meta.dart","flare_flutter|lib/asset_provider.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}
