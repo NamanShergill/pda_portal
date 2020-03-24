@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:pda_portal/theme.dart';
-import 'package:pda_portal/landing/dashboard.dart';
+import 'package:pda_portal/pages/landing/dashboard.dart';
 
 int selectedIndex= 0;
 List<String> navBottom = ["All","Urgent","Pending","Approved", "Rejected"];
