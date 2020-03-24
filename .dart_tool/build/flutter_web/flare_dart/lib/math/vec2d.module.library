@@ -1,1 +1,0 @@
-{"isEntrypoint":true,"deps":["flare_dart|lib/math/mat2d.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["math","typed_data"],"hasMain":false}
